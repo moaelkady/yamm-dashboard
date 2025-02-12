@@ -1,9 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        IBMar: ["IBMPlex-sans-arabic", "sans-serif"],
+      },
+      colors: {
+        primaryColor: "#9d6cff",
+        secondaryColor: "#f1e6ff",
+      },
+    },
   },
-  plugins: [],
-}
-
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({});
+    },
+  ],
+};

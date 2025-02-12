@@ -1,0 +1,14 @@
+{
+  "appBar": {
+    "logout": "Logout"
+  },
+  "aside": {
+    "dashboard": "Dashboard"
+  },
+  "dashboard": {},
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "We're sorry, the page you're looking for doesn't exist.",
+    "goBack": "Go Back to Home"
+  }
+}
