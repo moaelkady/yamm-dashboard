@@ -1,8 +1,10 @@
 import React, { createContext, useReducer, useContext, ReactNode, useEffect } from "react";
+import { toast } from "react-toastify";
 import { useQuery } from "@tanstack/react-query";
 import { RefundOrdersApi } from "../repository/RefundOrdersApi";
 import { OrderRecord } from "../types/order_record";
 import { OrdersActionTypes } from "../utils/enums";
+import "react-toastify/dist/ReactToastify.css";
 
 interface OrdersState {
     data: OrderRecord[];
@@ -128,8 +130,10 @@ export const RefundOrdersProvider: React.FC<{ children: ReactNode }> = ({ childr
                 type: OrdersActionTypes.TOGGLE_ORDER_STATUS,
                 payload: { orderId, newBody },
             });
+            toast.success("Order status updated successfully!");
         } catch (error) {
             console.error("Failed to toggle order status", error);
+            toast.error("Failed to update order status.");
         }
     };
 
@@ -140,10 +144,13 @@ export const RefundOrdersProvider: React.FC<{ children: ReactNode }> = ({ childr
                 type: OrdersActionTypes.UPDATE_ORDER_DECISION,
                 payload: { orderId, newBody, decision },
             });
+            toast.success(`Order decision changed to ${decision === null ? "Pending" : decision.length > 0 ? decision : "Pending"}`);
         } catch (error) {
             console.error("Failed to update order decision", error);
+            toast.error("Failed to update decision.");
         }
     };
+
 
     useEffect(() => {
         localStorage.setItem("pageNumber", JSON.stringify(state.page))
@@ -151,7 +158,6 @@ export const RefundOrdersProvider: React.FC<{ children: ReactNode }> = ({ childr
 
     useEffect(() => {
         const storedPage = localStorage.getItem("pageNumber");
-        console.log(storedPage)
         if (storedPage) {
             const parsedPage = JSON.parse(storedPage);
             if (parsedPage >= 1) {

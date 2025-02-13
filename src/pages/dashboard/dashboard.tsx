@@ -2,8 +2,6 @@ import { useRefundOrders } from "../../context/RefundOrdersContext";
 import RefundOrdersTable from "../../components/RefundOrdersTable";
 const Dashboard = () => {
     const { state, isFetching, goToNextPage, goToPrevPage, toggleOrderStatus, updateOrderDecision } = useRefundOrders();
-    console.log(state, isFetching)
-
     return (
         <div>
             {isFetching ? "Loading" : state.error ? "error" : (

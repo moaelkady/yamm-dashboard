@@ -2918,7 +2918,7 @@
       "store_url": "https://yamm.sa",
       "amount": "210.00",
       "active": false,
-      "decision": "accept",
+      "decision": "escalate",
       "items": [
         {
           "name": "USB-C Hub",
@@ -2941,8 +2941,8 @@
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
       "amount": "359.96",
-      "active": true,
-      "decision": "escalate",
+      "active": false,
+      "decision": null,
       "items": [
         {
           "name": "Mechanical Keyboard",
@@ -2960,7 +2960,7 @@
       "store_url": "https://yamm.sa",
       "amount": "542.97",
       "active": false,
-      "decision": null,
+      "decision": "",
       "items": [
         {
           "name": "Smartwatch",
@@ -2978,7 +2978,7 @@
       "store_url": "https://yamm.sa",
       "amount": "359.96",
       "active": false,
-      "decision": "reject",
+      "decision": "",
       "items": [
         {
           "name": "Mechanical Keyboard",

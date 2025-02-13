@@ -3,6 +3,7 @@ import { Suspense, lazy } from "react";
 import NavigationLayout from "./layouts/sidebar_navigation_layout";
 import Spinner from "./components/spinner/spinner";
 import { RefundOrdersProvider } from "./context/RefundOrdersContext";
+import { ToastContainer } from "react-toastify";
 
 const Dashboard = lazy(() => import("./pages/dashboard/dashboard"));
 const OrderItems = lazy(() => import("./pages/dashboard/[order_items]/order_items"));
@@ -20,16 +21,7 @@ const App = () => {
             <NavigationLayout>
               <RefundOrdersProvider>
                 <Dashboard />
-              </RefundOrdersProvider>
-            </NavigationLayout>
-          }
-        />
-        <Route
-          path="/dashboard"
-          element={
-            <NavigationLayout>
-              <RefundOrdersProvider>
-                <Dashboard />
+                <ToastContainer position="bottom-right" autoClose={3000} />
               </RefundOrdersProvider>
             </NavigationLayout>
           }
