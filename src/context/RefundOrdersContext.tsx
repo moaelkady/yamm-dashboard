@@ -19,11 +19,14 @@ type OrdersAction =
     | { type: OrdersActionTypes.NEXT_PAGE }
     | { type: OrdersActionTypes.PREV_PAGE };
 
-const initialState: OrdersState = {
-    data: [],
-    pages: 0,
-    error: null,
-    page: 1,
+const getInitialState = (): OrdersState => {
+    const storedPage = localStorage.getItem("pageNumber");
+    return {
+        data: [],
+        pages: 0,
+        error: null,
+        page: storedPage ? JSON.parse(storedPage) : 1, // just to get last page stored
+    };
 };
 
 const ordersReducer = (state: OrdersState, action: OrdersAction): OrdersState => {
@@ -70,7 +73,7 @@ interface OrdersContextProps {
 const RefundOrdersContext = createContext<OrdersContextProps | undefined>(undefined);
 
 export const RefundOrdersProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-    const [state, dispatch] = useReducer(ordersReducer, initialState);
+    const [state, dispatch] = useReducer(ordersReducer, getInitialState());
 
     const { data, error, isFetching } = useQuery<{ data: OrderRecord[], pages: number, page: number }, Error>({
         queryKey: ["refundOrders", state.page],
@@ -119,6 +122,20 @@ export const RefundOrdersProvider: React.FC<{ children: ReactNode }> = ({ childr
         }
     };
 
+    useEffect(() => {
+        localStorage.setItem("pageNumber", JSON.stringify(state.page))
+    }, [state.page])
+
+    useEffect(() => {
+        const storedPage = localStorage.getItem("pageNumber");
+        console.log(storedPage)
+        if (storedPage) {
+            const parsedPage = JSON.parse(storedPage);
+            if (parsedPage >= 1) {
+                dispatch({ type: OrdersActionTypes.SET_PAGE, payload: parsedPage });
+            }
+        }
+    }, []);
 
     return (
         <RefundOrdersContext.Provider value={{ state, isFetching, setPage, goToNextPage, goToPrevPage, toggleOrderStatus }}>

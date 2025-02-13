@@ -7,7 +7,7 @@
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
       "amount": "400.00",
-      "active": false,
+      "active": true,
       "decision": null,
       "items": [
         {
@@ -25,7 +25,7 @@
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
       "amount": "500.00",
-      "active": false,
+      "active": true,
       "decision": null,
       "items": [
         {
@@ -43,7 +43,7 @@
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
       "amount": "269.97",
-      "active": false,
+      "active": true,
       "decision": null,
       "items": [
         {
@@ -355,7 +355,7 @@
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
       "amount": "599.98",
-      "active": true,
+      "active": false,
       "decision": null,
       "items": [
         {
@@ -703,8 +703,28 @@
       ]
     },
     {
+      "id": "RFD-031",
+      "reason": "Duplicate order",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "354.95",
       "active": false,
-      "id": "RFD-031"
+      "decision": null,
+      "items": [
+        {
+          "name": "Gaming Mouse",
+          "id": "P006",
+          "price": 45.99,
+          "quantity": 5
+        },
+        {
+          "name": "Smartphone Case",
+          "id": "P002",
+          "price": 25,
+          "quantity": 5
+        }
+      ]
     },
     {
       "id": "RFD-032",
@@ -1739,7 +1759,7 @@
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
       "amount": "200.00",
-      "active": true,
+      "active": false,
       "decision": null,
       "items": [
         {
@@ -1781,7 +1801,7 @@
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
       "amount": "300.00",
-      "active": true,
+      "active": false,
       "decision": null,
       "items": [
         {
@@ -1799,7 +1819,7 @@
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
       "amount": "241.00",
-      "active": true,
+      "active": false,
       "decision": null,
       "items": [
         {
