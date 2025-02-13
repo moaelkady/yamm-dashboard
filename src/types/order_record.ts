@@ -18,3 +18,10 @@ export interface OrderRecord {
     decision: OrderDecision;
     items: OrderItem[];
 }
+
+export interface OrdersState {
+    data: OrderRecord[];
+    pages: number;
+    error: string | null;
+    page: number;
+}
