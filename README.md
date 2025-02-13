@@ -33,13 +33,13 @@ The project follows a modular structure for maintainability and scalability.
 ├── 📂 assets        # Static assets (images, icons, etc.)
 ├── 📂 context       # Global state management using Context API
 ├── 📂 data          # Static data files or mock data
-├── 📂 layouts       # Layout components (e.g., Dashboard Layout)
+├── 📂 layouts       # Layout components (e.g., Navigation Layout)
 ├── 📂 locales       # Translation files for i18n
 ├── 📂 network       # API request handling using Axios
-├── 📂 pages         # Page components (e.g., Dashboard, Settings)
+├── 📂 pages         # Page components (e.g., Dashboard, Order details)
 ├── 📂 repository    # Business logic layer for API interactions
 ├── 📂 types         # TypeScript type definitions
-├── 📂 utils         # Utility functions (e.g., helpers, formatters)
+├── 📂 utils         # Utility functions (e.g., Constants, enums, helpers)
 └── 📜 README.md     # Project documentation
 ```
 
