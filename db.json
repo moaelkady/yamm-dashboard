@@ -6,9 +6,9 @@
       "store_name": "Yamm Store",
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
-      "amount": "400.00",
+      "amount": "430.00",
       "active": true,
-      "decision": null,
+      "decision": "accept",
       "items": [
         {
           "name": "Bluetooth Speaker",
@@ -26,7 +26,7 @@
       "store_url": "https://yamm.sa",
       "amount": "500.00",
       "active": true,
-      "decision": null,
+      "decision": "reject",
       "items": [
         {
           "name": "Bluetooth Speaker",
@@ -44,7 +44,7 @@
       "store_url": "https://yamm.sa",
       "amount": "269.97",
       "active": true,
-      "decision": null,
+      "decision": "reject",
       "items": [
         {
           "name": "Mechanical Keyboard",

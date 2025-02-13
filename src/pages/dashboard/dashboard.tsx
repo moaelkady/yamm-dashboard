@@ -1,7 +1,7 @@
 import { useRefundOrders } from "../../context/RefundOrdersContext";
 import RefundOrdersTable from "../../components/RefundOrdersTable";
 const Dashboard = () => {
-    const { state, isFetching, goToNextPage, goToPrevPage, toggleOrderStatus } = useRefundOrders();
+    const { state, isFetching, goToNextPage, goToPrevPage, toggleOrderStatus, updateOrderDecision } = useRefundOrders();
     console.log(state, isFetching)
 
     return (
@@ -12,9 +12,10 @@ const Dashboard = () => {
                     page={state.page}
                     pages={state.pages}
                     goToNextPage={goToNextPage}
-                    goToPrevPage={goToPrevPage} 
+                    goToPrevPage={goToPrevPage}
                     toggleOrderStatus={toggleOrderStatus}
-                    />
+                    updateOrderDecision={updateOrderDecision}
+                />
             )}
         </div>
     );

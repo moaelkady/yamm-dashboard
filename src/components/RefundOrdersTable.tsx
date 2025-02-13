@@ -7,9 +7,10 @@ interface RefundOrdersTableProps {
     goToNextPage: () => void;
     goToPrevPage: () => void;
     toggleOrderStatus: (orderId: string, newBody: object) => Promise<void>;
+    updateOrderDecision: (orderId: string, newBody: object, decesion: "reject" | "accept" | "escalate" | null) => Promise<void>;
 }
 
-const RefundOrdersTable: React.FC<RefundOrdersTableProps> = ({ orders = [], page, pages, goToNextPage, goToPrevPage, toggleOrderStatus }) => {
+const RefundOrdersTable: React.FC<RefundOrdersTableProps> = ({ orders = [], page, pages, goToNextPage, goToPrevPage, toggleOrderStatus, updateOrderDecision }) => {
     return (
         <div className="bg-white shadow-md rounded-lg overflow-auto">
             <table className="w-full border-collapse">
@@ -53,7 +54,18 @@ const RefundOrdersTable: React.FC<RefundOrdersTableProps> = ({ orders = [], page
                                     />
                                 </div>
                             </td>
-                            <td className="p-3 border text-center">{order.decision}</td>
+                            <td className="p-3 border text-center">
+                                <select
+                                    className="p-2 border rounded bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    value={order.decision || ""}
+                                    onChange={(e) => updateOrderDecision(order.id, { ...order, decision: e.target.value as "reject" | "accept" | "escalate" | null }, e.target.value as "reject" | "accept" | "escalate" | null)}
+                                >
+                                    <option value="">Select Decision</option>
+                                    <option value="accept">Accept</option>
+                                    <option value="reject">Reject</option>
+                                    <option value="escalate">Escalate</option>
+                                </select>
+                            </td>
                             <td className="p-3 border text-center">{order.items.length}</td>
                         </tr>
                     ))}

@@ -1,7 +1,7 @@
 import { ServicesURLs } from "../network/ServicesURLs";
 import { NetworkCall } from "../network/NetworkCall";
 import { HttpMethod } from "../utils/enums";
-import { OrderRecord, OrderDecision } from "../types/order_record";
+import { OrderRecord } from "../types/order_record";
 
 export const RefundOrdersApi = {
     fetchOrders: async (page: number = 1, limit: number = 15): Promise<{ data: OrderRecord[], pages: number, page: number }> => {
@@ -11,11 +11,11 @@ export const RefundOrdersApi = {
         }) as Promise<{ data: OrderRecord[], pages: number, page: number }>;
     },
 
-    updateOrderDecision: async (orderId: string, decision: OrderDecision) => {
+    updateOrderDecision: async (orderId: string, newBody: object) => {
         return NetworkCall.makeCall({
             endPoint: `${ServicesURLs.ORDERS}/${orderId}`,
             method: HttpMethod.PUT,
-            requestBody: { decision },
+            requestBody: { ...newBody },
         });
     },
 

@@ -14,6 +14,7 @@ interface OrdersState {
 type OrdersAction =
     | { type: OrdersActionTypes.FETCH_SUCCESS; payload: { data: OrderRecord[]; pages: number, page: number } }
     | { type: OrdersActionTypes.TOGGLE_ORDER_STATUS; payload: { orderId: string; newBody: object } }
+    | { type: OrdersActionTypes.UPDATE_ORDER_DECISION; payload: { orderId: string; newBody: object; decision: "reject" | "accept" | "escalate" | null } }
     | { type: OrdersActionTypes.FETCH_FAILURE; payload: string }
     | { type: OrdersActionTypes.SET_PAGE; payload: number }
     | { type: OrdersActionTypes.NEXT_PAGE }
@@ -54,6 +55,15 @@ const ordersReducer = (state: OrdersState, action: OrdersAction): OrdersState =>
                         : order
                 ),
             };
+        case OrdersActionTypes.UPDATE_ORDER_DECISION:
+            return {
+                ...state,
+                data: state.data.map(order =>
+                    order.id === action.payload.orderId
+                        ? { ...order, decision: action.payload.decision }
+                        : order
+                ),
+            };
 
 
         default:
@@ -68,6 +78,7 @@ interface OrdersContextProps {
     goToNextPage: () => void;
     goToPrevPage: () => void;
     toggleOrderStatus: (orderId: string, newBody: object) => Promise<void>;
+    updateOrderDecision: (orderId: string, newBody: object, decision: "reject" | "accept" | "escalate" | null) => Promise<void>;
 }
 
 const RefundOrdersContext = createContext<OrdersContextProps | undefined>(undefined);
@@ -122,6 +133,18 @@ export const RefundOrdersProvider: React.FC<{ children: ReactNode }> = ({ childr
         }
     };
 
+    const updateOrderDecision = async (orderId: string, newBody: object, decision: "reject" | "accept" | "escalate" | null) => {
+        try {
+            await RefundOrdersApi.updateOrderDecision(orderId, newBody);
+            dispatch({
+                type: OrdersActionTypes.UPDATE_ORDER_DECISION,
+                payload: { orderId, newBody, decision },
+            });
+        } catch (error) {
+            console.error("Failed to update order decision", error);
+        }
+    };
+
     useEffect(() => {
         localStorage.setItem("pageNumber", JSON.stringify(state.page))
     }, [state.page])
@@ -138,7 +161,7 @@ export const RefundOrdersProvider: React.FC<{ children: ReactNode }> = ({ childr
     }, []);
 
     return (
-        <RefundOrdersContext.Provider value={{ state, isFetching, setPage, goToNextPage, goToPrevPage, toggleOrderStatus }}>
+        <RefundOrdersContext.Provider value={{ state, isFetching, setPage, goToNextPage, goToPrevPage, toggleOrderStatus, updateOrderDecision }}>
             {children}
         </RefundOrdersContext.Provider>
     );
