@@ -4,7 +4,7 @@ import { NetworkStatusCodes } from "../utils/enums";
 import axios, { AxiosResponse } from "axios";
 
 export class NetworkCall {
-    static async makeCall({
+    static async makeCall<T>({
         endPoint,
         method,
         requestBody,
@@ -16,9 +16,9 @@ export class NetworkCall {
         requestBody?: Record<string, unknown>;
         queryParams?: Record<string, unknown>;
         isMultipart?: boolean;
-    }): Promise<unknown> {
+    }): Promise<{ success: true; data: T } | { success: false; error: { message: string } }> {
         try {
-            let response: AxiosResponse;
+            let response: AxiosResponse<T>;
 
             switch (method) {
                 case HttpMethod.GET:
@@ -41,13 +41,10 @@ export class NetworkCall {
                 response.status >= NetworkStatusCodes.OK_200 &&
                 response.status <= NetworkStatusCodes.OK_299
             ) {
-                return response.data;
+                return { success: true, data: response.data };
             } else {
-                console.error(
-                    `API Error: ${response.status} - ${response.statusText}`,
-                    response.data
-                );
-                return response.data;
+                console.error(`API Error: ${response.status} - ${response.statusText}`, response.data);
+                return { success: false, error: { message: response.statusText } };
             }
         } catch (error) {
             if (axios.isAxiosError(error)) {

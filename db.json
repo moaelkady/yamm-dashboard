@@ -2918,7 +2918,7 @@
       "store_url": "https://yamm.sa",
       "amount": "210.00",
       "active": false,
-      "decision": null,
+      "decision": "accept",
       "items": [
         {
           "name": "USB-C Hub",
@@ -2941,8 +2941,8 @@
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
       "amount": "359.96",
-      "active": false,
-      "decision": null,
+      "active": true,
+      "decision": "escalate",
       "items": [
         {
           "name": "Mechanical Keyboard",
@@ -2959,7 +2959,7 @@
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
       "amount": "542.97",
-      "active": true,
+      "active": false,
       "decision": null,
       "items": [
         {
@@ -2978,7 +2978,7 @@
       "store_url": "https://yamm.sa",
       "amount": "359.96",
       "active": false,
-      "decision": null,
+      "decision": "reject",
       "items": [
         {
           "name": "Mechanical Keyboard",

@@ -1,4 +1,7 @@
-import { OrderRecord } from "../types/order_record";
+import { Link } from "react-router-dom";
+import { IconButton } from "@mui/material";
+import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
+import { OrderRecord, OrderDecision } from "../types/order_record";
 
 interface RefundOrdersTableProps {
     orders: OrderRecord[];
@@ -7,7 +10,7 @@ interface RefundOrdersTableProps {
     goToNextPage: () => void;
     goToPrevPage: () => void;
     toggleOrderStatus: (orderId: string, newBody: object) => Promise<void>;
-    updateOrderDecision: (orderId: string, newBody: object, decesion: "reject" | "accept" | "escalate" | null) => Promise<void>;
+    updateOrderDecision: (orderId: string, newBody: object, decesion: OrderDecision) => Promise<void>;
 }
 
 const RefundOrdersTable: React.FC<RefundOrdersTableProps> = ({ orders = [], page, pages, goToNextPage, goToPrevPage, toggleOrderStatus, updateOrderDecision }) => {
@@ -25,6 +28,7 @@ const RefundOrdersTable: React.FC<RefundOrdersTableProps> = ({ orders = [], page
                         <th className="p-3 border">Active</th>
                         <th className="p-3 border">Decision</th>
                         <th className="p-3 border">Items</th>
+                        <th className="p-3 border">View Items</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -58,7 +62,7 @@ const RefundOrdersTable: React.FC<RefundOrdersTableProps> = ({ orders = [], page
                                 <select
                                     className="p-2 border rounded bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
                                     value={order.decision || ""}
-                                    onChange={(e) => updateOrderDecision(order.id, { ...order, decision: e.target.value as "reject" | "accept" | "escalate" | null }, e.target.value as "reject" | "accept" | "escalate" | null)}
+                                    onChange={(e) => updateOrderDecision(order.id, { ...order, decision: e.target.value as OrderDecision }, e.target.value as OrderDecision)}
                                 >
                                     <option value="">Select Decision</option>
                                     <option value="accept">Accept</option>
@@ -67,6 +71,13 @@ const RefundOrdersTable: React.FC<RefundOrdersTableProps> = ({ orders = [], page
                                 </select>
                             </td>
                             <td className="p-3 border text-center">{order.items.length}</td>
+                            <td className="p-3 border text-center">
+                                <Link to={`/${order.id}`}>
+                                    <IconButton>
+                                        <ArrowOutwardIcon />
+                                    </IconButton>
+                                </Link>
+                            </td>
                         </tr>
                     ))}
                 </tbody>
