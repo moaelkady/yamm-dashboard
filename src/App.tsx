@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import NavigationLayout from "./layouts/sidebar_navigation_layout";
 import Spinner from "./components/spinner/spinner";
+import { RefundOrdersProvider } from "./context/RefundOrdersContext";
 
 const Dashboard = lazy(() => import("./pages/dashboard/dashboard"));
 const OrderItems = lazy(() => import("./pages/dashboard/[order_items]/order_items"));
@@ -17,7 +18,9 @@ const App = () => {
           index
           element={
             <NavigationLayout>
-              <Dashboard />
+              <RefundOrdersProvider>
+                <Dashboard />
+              </RefundOrdersProvider>
             </NavigationLayout>
           }
         />
@@ -25,7 +28,9 @@ const App = () => {
           path="/dashboard"
           element={
             <NavigationLayout>
-              <Dashboard />
+              <RefundOrdersProvider>
+                <Dashboard />
+              </RefundOrdersProvider>
             </NavigationLayout>
           }
         />

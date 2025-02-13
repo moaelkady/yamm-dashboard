@@ -13,7 +13,7 @@ export interface OrderRecord {
     store_name: string;
     store_logo: string;
     store_url: string;
-    amount: number;
+    amount: number | string;
     active: boolean;
     decision: OrderDecision;
     items: OrderItem[];

@@ -2,89 +2,47 @@
   "orders": [
     {
       "id": "RFD-001",
-      "reason": "Payment issue",
+      "reason": "Duplicate order",
       "store_name": "Yamm Store",
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
-      "amount": "287.97",
+      "amount": "400.00",
       "active": false,
       "decision": null,
       "items": [
         {
-          "name": "Running Shoes",
-          "id": "P004",
-          "price": 50,
-          "quantity": 2
-        },
-        {
-          "name": "Running Shoes",
-          "id": "P004",
-          "price": 50,
-          "quantity": 1
-        },
-        {
-          "name": "Gaming Mouse",
-          "id": "P006",
-          "price": 45.99,
-          "quantity": 3
+          "name": "Bluetooth Speaker",
+          "id": "P003",
+          "price": 100,
+          "quantity": 5
         }
       ]
     },
     {
       "id": "RFD-002",
-      "reason": "Defective product",
+      "reason": "Duplicate order",
       "store_name": "Yamm Store",
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
-      "amount": "450.72",
+      "amount": "500.00",
       "active": false,
       "decision": null,
       "items": [
         {
-          "name": "Mechanical Keyboard",
-          "id": "P007",
-          "price": 89.99,
-          "quantity": 3
-        },
-        {
-          "name": "Wireless Earbuds",
-          "id": "P001",
-          "price": 60.25,
-          "quantity": 3
+          "name": "Bluetooth Speaker",
+          "id": "P003",
+          "price": 100,
+          "quantity": 5
         }
       ]
     },
     {
       "id": "RFD-003",
-      "reason": "Wrong item received",
+      "reason": "Size issue",
       "store_name": "Yamm Store",
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
-      "amount": "150.00",
-      "active": true,
-      "decision": null,
-      "items": [
-        {
-          "name": "Smartphone Case",
-          "id": "P002",
-          "price": 25,
-          "quantity": 4
-        },
-        {
-          "name": "Smartphone Case",
-          "id": "P002",
-          "price": 25,
-          "quantity": 2
-        }
-      ]
-    },
-    {
-      "id": "RFD-004",
-      "reason": "Defective product",
-      "store_name": "Yamm Store",
-      "store_logo": "/logo.svg",
-      "store_url": "https://yamm.sa",
-      "amount": "219.97",
+      "amount": "269.97",
       "active": false,
       "decision": null,
       "items": [
@@ -92,67 +50,91 @@
           "name": "Mechanical Keyboard",
           "id": "P007",
           "price": 89.99,
-          "quantity": 2
-        },
-        {
-          "name": "Wireless Charger",
-          "id": "P009",
-          "price": 39.99,
-          "quantity": 1
+          "quantity": 3
         }
       ]
     },
     {
-      "id": "RFD-005",
-      "reason": "Item arrived late",
+      "id": "RFD-004",
+      "reason": "Item not as described",
       "store_name": "Yamm Store",
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
-      "amount": "1560.20",
+      "amount": "341.00",
       "active": false,
       "decision": null,
       "items": [
         {
-          "name": "4K Monitor",
-          "id": "P008",
-          "price": 299.99,
-          "quantity": 5
+          "name": "Bluetooth Speaker",
+          "id": "P003",
+          "price": 100,
+          "quantity": 1
         },
         {
           "name": "Wireless Earbuds",
           "id": "P001",
           "price": 60.25,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-005",
+      "reason": "Item not as described",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "199.97",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "USB-C Hub",
+          "id": "P010",
+          "price": 55,
+          "quantity": 1
+        },
+        {
+          "name": "Wireless Charger",
+          "id": "P009",
+          "price": 39.99,
+          "quantity": 3
+        },
+        {
+          "name": "Smartphone Case",
+          "id": "P002",
+          "price": 25,
           "quantity": 1
         }
       ]
     },
     {
       "id": "RFD-006",
-      "reason": "Payment issue",
+      "reason": "Item arrived late",
       "store_name": "Yamm Store",
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
-      "amount": "1738.91",
+      "amount": "586.98",
       "active": false,
       "decision": null,
       "items": [
         {
+          "name": "Smartphone Case",
+          "id": "P002",
+          "price": 25,
+          "quantity": 5
+        },
+        {
           "name": "Smartwatch",
           "id": "P005",
           "price": 180.99,
-          "quantity": 4
-        },
-        {
-          "name": "USB-C Hub",
-          "id": "P010",
-          "price": 55,
           "quantity": 2
         },
         {
-          "name": "Smartwatch",
-          "id": "P005",
-          "price": 180.99,
-          "quantity": 5
+          "name": "Bluetooth Speaker",
+          "id": "P003",
+          "price": 100,
+          "quantity": 1
         }
       ]
     },
@@ -162,27 +144,141 @@
       "store_name": "Yamm Store",
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
-      "amount": "291.93",
+      "amount": "904.95",
       "active": false,
       "decision": null,
       "items": [
         {
-          "name": "Wireless Charger",
-          "id": "P009",
-          "price": 39.99,
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
           "quantity": 5
-        },
-        {
-          "name": "Gaming Mouse",
-          "id": "P006",
-          "price": 45.99,
-          "quantity": 2
         }
       ]
     },
     {
       "id": "RFD-008",
-      "reason": "Defective product",
+      "reason": "Item arrived late",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "1892.89",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 3
+        },
+        {
+          "name": "Mechanical Keyboard",
+          "id": "P007",
+          "price": 89.99,
+          "quantity": 5
+        },
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "RFD-009",
+      "reason": "Duplicate order",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "399.95",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Bluetooth Speaker",
+          "id": "P003",
+          "price": 100,
+          "quantity": 2
+        },
+        {
+          "name": "Wireless Charger",
+          "id": "P009",
+          "price": 39.99,
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "id": "RFD-010",
+      "reason": "Wrong item received",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "1501.21",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 4
+        },
+        {
+          "name": "Wireless Earbuds",
+          "id": "P001",
+          "price": 60.25,
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "id": "RFD-011",
+      "reason": "Item not as described",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "164.99",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Smartphone Case",
+          "id": "P002",
+          "price": 25,
+          "quantity": 3
+        },
+        {
+          "name": "Mechanical Keyboard",
+          "id": "P007",
+          "price": 89.99,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "RFD-012",
+      "reason": "Customer changed mind",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "400.00",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Bluetooth Speaker",
+          "id": "P003",
+          "price": 100,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-013",
+      "reason": "Shipping damage",
       "store_name": "Yamm Store",
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
@@ -199,73 +295,13 @@
       ]
     },
     {
-      "id": "RFD-009",
+      "id": "RFD-014",
       "reason": "Payment issue",
       "store_name": "Yamm Store",
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
-      "amount": "339.97",
+      "amount": "1424.95",
       "active": false,
-      "decision": null,
-      "items": [
-        {
-          "name": "USB-C Hub",
-          "id": "P010",
-          "price": 55,
-          "quantity": 2
-        },
-        {
-          "name": "Wireless Charger",
-          "id": "P009",
-          "price": 39.99,
-          "quantity": 3
-        },
-        {
-          "name": "USB-C Hub",
-          "id": "P010",
-          "price": 55,
-          "quantity": 2
-        }
-      ]
-    },
-    {
-      "id": "RFD-010",
-      "reason": "Item arrived late",
-      "store_name": "Yamm Store",
-      "store_logo": "/logo.svg",
-      "store_url": "https://yamm.sa",
-      "amount": "1094.94",
-      "active": false,
-      "decision": null,
-      "items": [
-        {
-          "name": "Wireless Charger",
-          "id": "P009",
-          "price": 39.99,
-          "quantity": 3
-        },
-        {
-          "name": "4K Monitor",
-          "id": "P008",
-          "price": 299.99,
-          "quantity": 3
-        },
-        {
-          "name": "Smartphone Case",
-          "id": "P002",
-          "price": 25,
-          "quantity": 3
-        }
-      ]
-    },
-    {
-      "id": "RFD-011",
-      "reason": "Customer changed mind",
-      "store_name": "Yamm Store",
-      "store_logo": "/logo.svg",
-      "store_url": "https://yamm.sa",
-      "amount": "1303.93",
-      "active": true,
       "decision": null,
       "items": [
         {
@@ -274,132 +310,96 @@
           "price": 55,
           "quantity": 4
         },
-        {
-          "name": "4K Monitor",
-          "id": "P008",
-          "price": 299.99,
-          "quantity": 3
-        },
-        {
-          "name": "Gaming Mouse",
-          "id": "P006",
-          "price": 45.99,
-          "quantity": 4
-        }
-      ]
-    },
-    {
-      "id": "RFD-012",
-      "reason": "Duplicate order",
-      "store_name": "Yamm Store",
-      "store_logo": "/logo.svg",
-      "store_url": "https://yamm.sa",
-      "amount": "1010.97",
-      "active": false,
-      "decision": null,
-      "items": [
         {
           "name": "Bluetooth Speaker",
           "id": "P003",
           "price": 100,
-          "quantity": 5
-        },
-        {
-          "name": "Mechanical Keyboard",
-          "id": "P007",
-          "price": 89.99,
           "quantity": 3
         },
-        {
-          "name": "Wireless Earbuds",
-          "id": "P001",
-          "price": 60.25,
-          "quantity": 4
-        }
-      ]
-    },
-    {
-      "id": "RFD-013",
-      "reason": "Defective product",
-      "store_name": "Yamm Store",
-      "store_logo": "/logo.svg",
-      "store_url": "https://yamm.sa",
-      "amount": "1204.95",
-      "active": false,
-      "decision": null,
-      "items": [
         {
           "name": "Smartwatch",
           "id": "P005",
           "price": 180.99,
           "quantity": 5
-        },
-        {
-          "name": "Running Shoes",
-          "id": "P004",
-          "price": 50,
-          "quantity": 2
-        },
-        {
-          "name": "Bluetooth Speaker",
-          "id": "P003",
-          "price": 100,
-          "quantity": 2
-        }
-      ]
-    },
-    {
-      "id": "RFD-014",
-      "reason": "Duplicate order",
-      "store_name": "Yamm Store",
-      "store_logo": "/logo.svg",
-      "store_url": "https://yamm.sa",
-      "amount": "344.97",
-      "active": false,
-      "decision": null,
-      "items": [
-        {
-          "name": "Mechanical Keyboard",
-          "id": "P007",
-          "price": 89.99,
-          "quantity": 2
-        },
-        {
-          "name": "Smartphone Case",
-          "id": "P002",
-          "price": 25,
-          "quantity": 5
-        },
-        {
-          "name": "Wireless Charger",
-          "id": "P009",
-          "price": 39.99,
-          "quantity": 1
         }
       ]
     },
     {
       "id": "RFD-015",
-      "reason": "Customer changed mind",
+      "reason": "Item arrived late",
       "store_name": "Yamm Store",
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
-      "amount": "1222.93",
-      "active": true,
+      "amount": "1009.97",
+      "active": false,
       "decision": null,
       "items": [
         {
-          "name": "Wireless Charger",
-          "id": "P009",
-          "price": 39.99,
-          "quantity": 2
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 3
         },
+        {
+          "name": "USB-C Hub",
+          "id": "P010",
+          "price": 55,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "RFD-016",
+      "reason": "Payment issue",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "599.98",
+      "active": true,
+      "decision": null,
+      "items": [
         {
           "name": "4K Monitor",
           "id": "P008",
           "price": 299.99,
           "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "RFD-017",
+      "reason": "Wrong item received",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "280.99",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 1
         },
+        {
+          "name": "Running Shoes",
+          "id": "P004",
+          "price": 50,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "RFD-018",
+      "reason": "Item not as described",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "542.97",
+      "active": false,
+      "decision": null,
+      "items": [
         {
           "name": "Smartwatch",
           "id": "P005",
@@ -409,422 +409,62 @@
       ]
     },
     {
-      "id": "RFD-016",
+      "id": "RFD-019",
       "reason": "Item not as described",
       "store_name": "Yamm Store",
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
-      "amount": "350.00",
-      "active": true,
+      "amount": "2554.90",
+      "active": false,
       "decision": null,
       "items": [
         {
           "name": "Running Shoes",
           "id": "P004",
           "price": 50,
-          "quantity": 5
-        },
-        {
-          "name": "Bluetooth Speaker",
-          "id": "P003",
-          "price": 100,
-          "quantity": 1
-        }
-      ]
-    },
-    {
-      "id": "RFD-017",
-      "reason": "Shipping damage",
-      "store_name": "Yamm Store",
-      "store_logo": "/logo.svg",
-      "store_url": "https://yamm.sa",
-      "amount": "217.95",
-      "active": true,
-      "decision": null,
-      "items": [
-        {
-          "name": "Wireless Charger",
-          "id": "P009",
-          "price": 39.99,
-          "quantity": 2
-        },
-        {
-          "name": "Gaming Mouse",
-          "id": "P006",
-          "price": 45.99,
           "quantity": 3
-        }
-      ]
-    },
-    {
-      "id": "RFD-018",
-      "reason": "Customer changed mind",
-      "store_name": "Yamm Store",
-      "store_logo": "/logo.svg",
-      "store_url": "https://yamm.sa",
-      "amount": "125.00",
-      "active": false,
-      "decision": null,
-      "items": [
+        },
         {
-          "name": "Smartphone Case",
-          "id": "P002",
-          "price": 25,
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
           "quantity": 5
-        }
-      ]
-    },
-    {
-      "id": "RFD-019",
-      "reason": "Duplicate order",
-      "store_name": "Yamm Store",
-      "store_logo": "/logo.svg",
-      "store_url": "https://yamm.sa",
-      "amount": "89.99",
-      "active": true,
-      "decision": null,
-      "items": [
+        },
         {
-          "name": "Mechanical Keyboard",
-          "id": "P007",
-          "price": 89.99,
-          "quantity": 1
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 5
         }
       ]
     },
     {
       "id": "RFD-020",
-      "reason": "Wrong item received",
+      "reason": "Color mismatch",
       "store_name": "Yamm Store",
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
-      "amount": "275.00",
-      "active": false,
+      "amount": "471.98",
+      "active": true,
       "decision": null,
       "items": [
         {
           "name": "USB-C Hub",
           "id": "P010",
           "price": 55,
-          "quantity": 5
+          "quantity": 2
+        },
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 2
         }
       ]
     },
     {
       "id": "RFD-021",
-      "reason": "Item not as described",
-      "store_name": "Yamm Store",
-      "store_logo": "/logo.svg",
-      "store_url": "https://yamm.sa",
-      "amount": "449.95",
-      "active": true,
-      "decision": null,
-      "items": [
-        {
-          "name": "Mechanical Keyboard",
-          "id": "P007",
-          "price": 89.99,
-          "quantity": 5
-        }
-      ]
-    },
-    {
-      "id": "RFD-022",
-      "reason": "Item arrived late",
-      "store_name": "Yamm Store",
-      "store_logo": "/logo.svg",
-      "store_url": "https://yamm.sa",
-      "amount": "729.95",
-      "active": true,
-      "decision": null,
-      "items": [
-        {
-          "name": "Bluetooth Speaker",
-          "id": "P003",
-          "price": 100,
-          "quantity": 5
-        },
-        {
-          "name": "Gaming Mouse",
-          "id": "P006",
-          "price": 45.99,
-          "quantity": 5
-        }
-      ]
-    },
-    {
-      "id": "RFD-023",
-      "reason": "Customer changed mind",
-      "store_name": "Yamm Store",
-      "store_logo": "/logo.svg",
-      "store_url": "https://yamm.sa",
-      "amount": "1029.91",
-      "active": true,
-      "decision": null,
-      "items": [
-        {
-          "name": "4K Monitor",
-          "id": "P008",
-          "price": 299.99,
-          "quantity": 2
-        },
-        {
-          "name": "Mechanical Keyboard",
-          "id": "P007",
-          "price": 89.99,
-          "quantity": 3
-        },
-        {
-          "name": "Wireless Charger",
-          "id": "P009",
-          "price": 39.99,
-          "quantity": 4
-        }
-      ]
-    },
-    {
-      "id": "RFD-024",
-      "reason": "Payment issue",
-      "store_name": "Yamm Store",
-      "store_logo": "/logo.svg",
-      "store_url": "https://yamm.sa",
-      "amount": "1002.93",
-      "active": false,
-      "decision": null,
-      "items": [
-        {
-          "name": "Smartwatch",
-          "id": "P005",
-          "price": 180.99,
-          "quantity": 3
-        },
-        {
-          "name": "Bluetooth Speaker",
-          "id": "P003",
-          "price": 100,
-          "quantity": 1
-        },
-        {
-          "name": "Mechanical Keyboard",
-          "id": "P007",
-          "price": 89.99,
-          "quantity": 4
-        }
-      ]
-    },
-    {
-      "id": "RFD-025",
-      "reason": "Color mismatch",
-      "store_name": "Yamm Store",
-      "store_logo": "/logo.svg",
-      "store_url": "https://yamm.sa",
-      "amount": "200.00",
-      "active": false,
-      "decision": null,
-      "items": [
-        {
-          "name": "Bluetooth Speaker",
-          "id": "P003",
-          "price": 100,
-          "quantity": 2
-        }
-      ]
-    },
-    {
-      "id": "RFD-026",
-      "reason": "Color mismatch",
-      "store_name": "Yamm Store",
-      "store_logo": "/logo.svg",
-      "store_url": "https://yamm.sa",
-      "amount": "1023.43",
-      "active": true,
-      "decision": null,
-      "items": [
-        {
-          "name": "Wireless Earbuds",
-          "id": "P001",
-          "price": 60.25,
-          "quantity": 2
-        },
-        {
-          "name": "Smartwatch",
-          "id": "P005",
-          "price": 180.99,
-          "quantity": 3
-        },
-        {
-          "name": "Mechanical Keyboard",
-          "id": "P007",
-          "price": 89.99,
-          "quantity": 4
-        }
-      ]
-    },
-    {
-      "id": "RFD-027",
       "reason": "Wrong item received",
-      "store_name": "Yamm Store",
-      "store_logo": "/logo.svg",
-      "store_url": "https://yamm.sa",
-      "amount": "761.97",
-      "active": false,
-      "decision": null,
-      "items": [
-        {
-          "name": "4K Monitor",
-          "id": "P008",
-          "price": 299.99,
-          "quantity": 1
-        },
-        {
-          "name": "Smartphone Case",
-          "id": "P002",
-          "price": 25,
-          "quantity": 4
-        },
-        {
-          "name": "Smartwatch",
-          "id": "P005",
-          "price": 180.99,
-          "quantity": 2
-        }
-      ]
-    },
-    {
-      "id": "RFD-028",
-      "reason": "Customer changed mind",
-      "store_name": "Yamm Store",
-      "store_logo": "/logo.svg",
-      "store_url": "https://yamm.sa",
-      "amount": "200.00",
-      "active": true,
-      "decision": null,
-      "items": [
-        {
-          "name": "Running Shoes",
-          "id": "P004",
-          "price": 50,
-          "quantity": 4
-        }
-      ]
-    },
-    {
-      "id": "RFD-029",
-      "reason": "Duplicate order",
-      "store_name": "Yamm Store",
-      "store_logo": "/logo.svg",
-      "store_url": "https://yamm.sa",
-      "amount": "179.98",
-      "active": true,
-      "decision": null,
-      "items": [
-        {
-          "name": "Mechanical Keyboard",
-          "id": "P007",
-          "price": 89.99,
-          "quantity": 2
-        }
-      ]
-    },
-    {
-      "id": "RFD-030",
-      "reason": "Payment issue",
-      "store_name": "Yamm Store",
-      "store_logo": "/logo.svg",
-      "store_url": "https://yamm.sa",
-      "amount": "1729.90",
-      "active": false,
-      "decision": null,
-      "items": [
-        {
-          "name": "4K Monitor",
-          "id": "P008",
-          "price": 299.99,
-          "quantity": 5
-        },
-        {
-          "name": "Gaming Mouse",
-          "id": "P006",
-          "price": 45.99,
-          "quantity": 5
-        }
-      ]
-    },
-    {
-      "id": "RFD-031",
-      "reason": "Color mismatch",
-      "store_name": "Yamm Store",
-      "store_logo": "/logo.svg",
-      "store_url": "https://yamm.sa",
-      "amount": "241.00",
-      "active": true,
-      "decision": null,
-      "items": [
-        {
-          "name": "Wireless Earbuds",
-          "id": "P001",
-          "price": 60.25,
-          "quantity": 4
-        }
-      ]
-    },
-    {
-      "id": "RFD-032",
-      "reason": "Shipping damage",
-      "store_name": "Yamm Store",
-      "store_logo": "/logo.svg",
-      "store_url": "https://yamm.sa",
-      "amount": "372.97",
-      "active": true,
-      "decision": null,
-      "items": [
-        {
-          "name": "Gaming Mouse",
-          "id": "P006",
-          "price": 45.99,
-          "quantity": 2
-        },
-        {
-          "name": "Bluetooth Speaker",
-          "id": "P003",
-          "price": 100,
-          "quantity": 1
-        },
-        {
-          "name": "Smartwatch",
-          "id": "P005",
-          "price": 180.99,
-          "quantity": 1
-        }
-      ]
-    },
-    {
-      "id": "RFD-033",
-      "reason": "Size issue",
-      "store_name": "Yamm Store",
-      "store_logo": "/logo.svg",
-      "store_url": "https://yamm.sa",
-      "amount": "349.99",
-      "active": true,
-      "decision": null,
-      "items": [
-        {
-          "name": "Running Shoes",
-          "id": "P004",
-          "price": 50,
-          "quantity": 1
-        },
-        {
-          "name": "4K Monitor",
-          "id": "P008",
-          "price": 299.99,
-          "quantity": 1
-        }
-      ]
-    },
-    {
-      "id": "RFD-034",
-      "reason": "Customer changed mind",
       "store_name": "Yamm Store",
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
@@ -841,12 +481,12 @@
       ]
     },
     {
-      "id": "RFD-035",
-      "reason": "Color mismatch",
+      "id": "RFD-022",
+      "reason": "Size issue",
       "store_name": "Yamm Store",
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
-      "amount": "495.94",
+      "amount": "654.95",
       "active": true,
       "decision": null,
       "items": [
@@ -854,31 +494,61 @@
           "name": "Gaming Mouse",
           "id": "P006",
           "price": 45.99,
+          "quantity": 5
+        },
+        {
+          "name": "Smartphone Case",
+          "id": "P002",
+          "price": 25,
           "quantity": 1
         },
         {
-          "name": "Mechanical Keyboard",
-          "id": "P007",
-          "price": 89.99,
+          "name": "Bluetooth Speaker",
+          "id": "P003",
+          "price": 100,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-023",
+      "reason": "Payment issue",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "279.93",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Wireless Charger",
+          "id": "P009",
+          "price": 39.99,
+          "quantity": 2
+        },
+        {
+          "name": "Wireless Charger",
+          "id": "P009",
+          "price": 39.99,
           "quantity": 5
         }
       ]
     },
     {
-      "id": "RFD-036",
-      "reason": "Defective product",
+      "id": "RFD-024",
+      "reason": "Item not as described",
       "store_name": "Yamm Store",
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
-      "amount": "354.98",
+      "amount": "482.97",
       "active": true,
       "decision": null,
       "items": [
         {
-          "name": "Running Shoes",
-          "id": "P004",
-          "price": 50,
-          "quantity": 4
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 2
         },
         {
           "name": "Smartphone Case",
@@ -887,328 +557,82 @@
           "quantity": 3
         },
         {
-          "name": "Wireless Charger",
-          "id": "P009",
-          "price": 39.99,
-          "quantity": 2
-        }
-      ]
-    },
-    {
-      "id": "RFD-037",
-      "reason": "Item not as described",
-      "store_name": "Yamm Store",
-      "store_logo": "/logo.svg",
-      "store_url": "https://yamm.sa",
-      "amount": "180.75",
-      "active": true,
-      "decision": null,
-      "items": [
-        {
-          "name": "Wireless Earbuds",
-          "id": "P001",
-          "price": 60.25,
-          "quantity": 3
-        }
-      ]
-    },
-    {
-      "id": "RFD-038",
-      "reason": "Item arrived late",
-      "store_name": "Yamm Store",
-      "store_logo": "/logo.svg",
-      "store_url": "https://yamm.sa",
-      "amount": "39.99",
-      "active": true,
-      "decision": null,
-      "items": [
-        {
-          "name": "Wireless Charger",
-          "id": "P009",
-          "price": 39.99,
+          "name": "Gaming Mouse",
+          "id": "P006",
+          "price": 45.99,
           "quantity": 1
         }
       ]
     },
     {
-      "id": "RFD-039",
+      "id": "RFD-025",
       "reason": "Wrong item received",
       "store_name": "Yamm Store",
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
-      "amount": "295.21",
+      "amount": "723.96",
       "active": false,
       "decision": null,
       "items": [
         {
-          "name": "Wireless Charger",
-          "id": "P009",
-          "price": 39.99,
-          "quantity": 4
-        },
-        {
-          "name": "Smartphone Case",
-          "id": "P002",
-          "price": 25,
-          "quantity": 3
-        },
-        {
-          "name": "Wireless Earbuds",
-          "id": "P001",
-          "price": 60.25,
-          "quantity": 1
-        }
-      ]
-    },
-    {
-      "id": "RFD-040",
-      "reason": "Payment issue",
-      "store_name": "Yamm Store",
-      "store_logo": "/logo.svg",
-      "store_url": "https://yamm.sa",
-      "amount": "180.75",
-      "active": true,
-      "decision": null,
-      "items": [
-        {
-          "name": "Wireless Earbuds",
-          "id": "P001",
-          "price": 60.25,
-          "quantity": 3
-        }
-      ]
-    },
-    {
-      "id": "RFD-041",
-      "reason": "Customer changed mind",
-      "store_name": "Yamm Store",
-      "store_logo": "/logo.svg",
-      "store_url": "https://yamm.sa",
-      "amount": "150.00",
-      "active": true,
-      "decision": null,
-      "items": [
-        {
-          "name": "Running Shoes",
-          "id": "P004",
-          "price": 50,
-          "quantity": 3
-        }
-      ]
-    },
-    {
-      "id": "RFD-042",
-      "reason": "Item not as described",
-      "store_name": "Yamm Store",
-      "store_logo": "/logo.svg",
-      "store_url": "https://yamm.sa",
-      "amount": "1771.91",
-      "active": false,
-      "decision": null,
-      "items": [
-        {
-          "name": "4K Monitor",
-          "id": "P008",
-          "price": 299.99,
-          "quantity": 5
-        },
-        {
-          "name": "Gaming Mouse",
-          "id": "P006",
-          "price": 45.99,
-          "quantity": 2
-        },
-        {
-          "name": "Mechanical Keyboard",
-          "id": "P007",
-          "price": 89.99,
-          "quantity": 2
-        }
-      ]
-    },
-    {
-      "id": "RFD-043",
-      "reason": "Payment issue",
-      "store_name": "Yamm Store",
-      "store_logo": "/logo.svg",
-      "store_url": "https://yamm.sa",
-      "amount": "100.99",
-      "active": true,
-      "decision": null,
-      "items": [
-        {
-          "name": "USB-C Hub",
-          "id": "P010",
-          "price": 55,
-          "quantity": 1
-        },
-        {
-          "name": "Gaming Mouse",
-          "id": "P006",
-          "price": 45.99,
-          "quantity": 1
-        }
-      ]
-    },
-    {
-      "id": "RFD-044",
-      "reason": "Duplicate order",
-      "store_name": "Yamm Store",
-      "store_logo": "/logo.svg",
-      "store_url": "https://yamm.sa",
-      "amount": "774.98",
-      "active": false,
-      "decision": null,
-      "items": [
-        {
-          "name": "Smartphone Case",
-          "id": "P002",
-          "price": 25,
-          "quantity": 3
-        },
-        {
-          "name": "4K Monitor",
-          "id": "P008",
-          "price": 299.99,
-          "quantity": 2
-        },
-        {
-          "name": "Bluetooth Speaker",
-          "id": "P003",
-          "price": 100,
-          "quantity": 1
-        }
-      ]
-    },
-    {
-      "id": "RFD-045",
-      "reason": "Color mismatch",
-      "store_name": "Yamm Store",
-      "store_logo": "/logo.svg",
-      "store_url": "https://yamm.sa",
-      "amount": "159.96",
-      "active": false,
-      "decision": null,
-      "items": [
-        {
-          "name": "Wireless Charger",
-          "id": "P009",
-          "price": 39.99,
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
           "quantity": 4
         }
       ]
     },
     {
-      "id": "RFD-046",
-      "reason": "Item not as described",
+      "id": "RFD-026",
+      "reason": "Shipping damage",
       "store_name": "Yamm Store",
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
-      "amount": "240.00",
-      "active": false,
+      "amount": "25.00",
+      "active": true,
       "decision": null,
       "items": [
-        {
-          "name": "USB-C Hub",
-          "id": "P010",
-          "price": 55,
-          "quantity": 1
-        },
         {
           "name": "Smartphone Case",
           "id": "P002",
           "price": 25,
-          "quantity": 3
-        },
-        {
-          "name": "USB-C Hub",
-          "id": "P010",
-          "price": 55,
-          "quantity": 2
-        }
-      ]
-    },
-    {
-      "id": "RFD-047",
-      "reason": "Item arrived late",
-      "store_name": "Yamm Store",
-      "store_logo": "/logo.svg",
-      "store_url": "https://yamm.sa",
-      "amount": "611.21",
-      "active": true,
-      "decision": null,
-      "items": [
-        {
-          "name": "Wireless Charger",
-          "id": "P009",
-          "price": 39.99,
           "quantity": 1
-        },
-        {
-          "name": "Wireless Earbuds",
-          "id": "P001",
-          "price": 60.25,
-          "quantity": 5
-        },
-        {
-          "name": "Mechanical Keyboard",
-          "id": "P007",
-          "price": 89.99,
-          "quantity": 3
         }
       ]
     },
     {
-      "id": "RFD-048",
-      "reason": "Payment issue",
+      "id": "RFD-027",
+      "reason": "Wrong item received",
       "store_name": "Yamm Store",
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
-      "amount": "829.93",
+      "amount": "883.96",
       "active": true,
       "decision": null,
       "items": [
+        {
+          "name": "Bluetooth Speaker",
+          "id": "P003",
+          "price": 100,
+          "quantity": 2
+        },
         {
           "name": "Gaming Mouse",
           "id": "P006",
           "price": 45.99,
+          "quantity": 4
+        },
+        {
+          "name": "Bluetooth Speaker",
+          "id": "P003",
+          "price": 100,
           "quantity": 5
-        },
-        {
-          "name": "4K Monitor",
-          "id": "P008",
-          "price": 299.99,
-          "quantity": 2
         }
       ]
     },
     {
-      "id": "RFD-049",
-      "reason": "Duplicate order",
-      "store_name": "Yamm Store",
-      "store_logo": "/logo.svg",
-      "store_url": "https://yamm.sa",
-      "amount": "400.00",
-      "active": true,
-      "decision": null,
-      "items": [
-        {
-          "name": "Bluetooth Speaker",
-          "id": "P003",
-          "price": 100,
-          "quantity": 2
-        },
-        {
-          "name": "Bluetooth Speaker",
-          "id": "P003",
-          "price": 100,
-          "quantity": 2
-        }
-      ]
-    },
-    {
-      "id": "RFD-050",
-      "reason": "Item not as described",
+      "id": "RFD-028",
+      "reason": "Shipping damage",
       "store_name": "Yamm Store",
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
@@ -1220,12 +644,310 @@
           "name": "Wireless Charger",
           "id": "P009",
           "price": 39.99,
+          "quantity": 2
+        },
+        {
+          "name": "Wireless Charger",
+          "id": "P009",
+          "price": 39.99,
+          "quantity": 3
+        },
+        {
+          "name": "Smartphone Case",
+          "id": "P002",
+          "price": 25,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-029",
+      "reason": "Item arrived late",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "229.95",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Gaming Mouse",
+          "id": "P006",
+          "price": 45.99,
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "id": "RFD-030",
+      "reason": "Duplicate order",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "354.95",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Gaming Mouse",
+          "id": "P006",
+          "price": 45.99,
           "quantity": 5
         },
         {
           "name": "Smartphone Case",
           "id": "P002",
           "price": 25,
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "active": false,
+      "id": "RFD-031"
+    },
+    {
+      "id": "RFD-032",
+      "reason": "Size issue",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "814.90",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 1
+        },
+        {
+          "name": "Mechanical Keyboard",
+          "id": "P007",
+          "price": 89.99,
+          "quantity": 5
+        },
+        {
+          "name": "Gaming Mouse",
+          "id": "P006",
+          "price": 45.99,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-033",
+      "reason": "Defective product",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "1199.95",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "USB-C Hub",
+          "id": "P010",
+          "price": 55,
+          "quantity": 4
+        },
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 3
+        },
+        {
+          "name": "Wireless Charger",
+          "id": "P009",
+          "price": 39.99,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "RFD-034",
+      "reason": "Item arrived late",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "841.00",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Running Shoes",
+          "id": "P004",
+          "price": 50,
+          "quantity": 2
+        },
+        {
+          "name": "Wireless Earbuds",
+          "id": "P001",
+          "price": 60.25,
+          "quantity": 4
+        },
+        {
+          "name": "Bluetooth Speaker",
+          "id": "P003",
+          "price": 100,
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "id": "RFD-035",
+      "reason": "Color mismatch",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "2399.92",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 5
+        },
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "RFD-036",
+      "reason": "Wrong item received",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "91.98",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Gaming Mouse",
+          "id": "P006",
+          "price": 45.99,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "RFD-037",
+      "reason": "Duplicate order",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "180.99",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "RFD-038",
+      "reason": "Customer changed mind",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "361.98",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "RFD-039",
+      "reason": "Size issue",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "550.96",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Running Shoes",
+          "id": "P004",
+          "price": 50,
+          "quantity": 2
+        },
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 1
+        },
+        {
+          "name": "Mechanical Keyboard",
+          "id": "P007",
+          "price": 89.99,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "RFD-040",
+      "reason": "Color mismatch",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "164.99",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Smartphone Case",
+          "id": "P002",
+          "price": 25,
+          "quantity": 3
+        },
+        {
+          "name": "Mechanical Keyboard",
+          "id": "P007",
+          "price": 89.99,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "RFD-041",
+      "reason": "Size issue",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "241.98",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Gaming Mouse",
+          "id": "P006",
+          "price": 45.99,
+          "quantity": 2
+        },
+        {
+          "name": "Running Shoes",
+          "id": "P004",
+          "price": 50,
           "quantity": 2
         },
         {
@@ -1233,6 +955,2622 @@
           "id": "P004",
           "price": 50,
           "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "RFD-042",
+      "reason": "Item not as described",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "682.19",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 1
+        },
+        {
+          "name": "Wireless Charger",
+          "id": "P009",
+          "price": 39.99,
+          "quantity": 5
+        },
+        {
+          "name": "Wireless Earbuds",
+          "id": "P001",
+          "price": 60.25,
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "id": "RFD-043",
+      "reason": "Wrong item received",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "80.00",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Smartphone Case",
+          "id": "P002",
+          "price": 25,
+          "quantity": 1
+        },
+        {
+          "name": "USB-C Hub",
+          "id": "P010",
+          "price": 55,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "RFD-044",
+      "reason": "Duplicate order",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "762.97",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "USB-C Hub",
+          "id": "P010",
+          "price": 55,
+          "quantity": 2
+        },
+        {
+          "name": "USB-C Hub",
+          "id": "P010",
+          "price": 55,
+          "quantity": 2
+        },
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "RFD-045",
+      "reason": "Duplicate order",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "800.00",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Bluetooth Speaker",
+          "id": "P003",
+          "price": 100,
+          "quantity": 2
+        },
+        {
+          "name": "Bluetooth Speaker",
+          "id": "P003",
+          "price": 100,
+          "quantity": 2
+        },
+        {
+          "name": "Bluetooth Speaker",
+          "id": "P003",
+          "price": 100,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-046",
+      "reason": "Item not as described",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "1399.96",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Running Shoes",
+          "id": "P004",
+          "price": 50,
+          "quantity": 4
+        },
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-047",
+      "reason": "Color mismatch",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "1085.94",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 5
+        },
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "RFD-048",
+      "reason": "Size issue",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "426.25",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Smartphone Case",
+          "id": "P002",
+          "price": 25,
+          "quantity": 5
+        },
+        {
+          "name": "Wireless Earbuds",
+          "id": "P001",
+          "price": 60.25,
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "id": "RFD-049",
+      "reason": "Defective product",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "468.19",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Mechanical Keyboard",
+          "id": "P007",
+          "price": 89.99,
+          "quantity": 3
+        },
+        {
+          "name": "Wireless Earbuds",
+          "id": "P001",
+          "price": 60.25,
+          "quantity": 1
+        },
+        {
+          "name": "Gaming Mouse",
+          "id": "P006",
+          "price": 45.99,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "RFD-050",
+      "reason": "Wrong item received",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "602.98",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 2
+        },
+        {
+          "name": "Wireless Earbuds",
+          "id": "P001",
+          "price": 60.25,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-051",
+      "reason": "Defective product",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "505.99",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Running Shoes",
+          "id": "P004",
+          "price": 50,
+          "quantity": 5
+        },
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 1
+        },
+        {
+          "name": "Smartphone Case",
+          "id": "P002",
+          "price": 25,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "RFD-052",
+      "reason": "Duplicate order",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "180.75",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Wireless Earbuds",
+          "id": "P001",
+          "price": 60.25,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "RFD-053",
+      "reason": "Shipping damage",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "269.97",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Mechanical Keyboard",
+          "id": "P007",
+          "price": 89.99,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "RFD-054",
+      "reason": "Defective product",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "449.95",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Mechanical Keyboard",
+          "id": "P007",
+          "price": 89.99,
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "id": "RFD-055",
+      "reason": "Defective product",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "1266.93",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 2
+        },
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "id": "RFD-056",
+      "reason": "Color mismatch",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "1380.71",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 4
+        },
+        {
+          "name": "Wireless Earbuds",
+          "id": "P001",
+          "price": 60.25,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "RFD-057",
+      "reason": "Color mismatch",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "350.94",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Gaming Mouse",
+          "id": "P006",
+          "price": 45.99,
+          "quantity": 4
+        },
+        {
+          "name": "Gaming Mouse",
+          "id": "P006",
+          "price": 45.99,
+          "quantity": 2
+        },
+        {
+          "name": "Smartphone Case",
+          "id": "P002",
+          "price": 25,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "RFD-058",
+      "reason": "Duplicate order",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "599.98",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "RFD-059",
+      "reason": "Color mismatch",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "179.98",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Mechanical Keyboard",
+          "id": "P007",
+          "price": 89.99,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "RFD-060",
+      "reason": "Defective product",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "461.00",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "USB-C Hub",
+          "id": "P010",
+          "price": 55,
+          "quantity": 3
+        },
+        {
+          "name": "USB-C Hub",
+          "id": "P010",
+          "price": 55,
+          "quantity": 1
+        },
+        {
+          "name": "Wireless Earbuds",
+          "id": "P001",
+          "price": 60.25,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-061",
+      "reason": "Item not as described",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "2449.92",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 4
+        },
+        {
+          "name": "Running Shoes",
+          "id": "P004",
+          "price": 50,
+          "quantity": 1
+        },
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-062",
+      "reason": "Customer changed mind",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "75.00",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Smartphone Case",
+          "id": "P002",
+          "price": 25,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "RFD-063",
+      "reason": "Color mismatch",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "481.47",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Wireless Earbuds",
+          "id": "P001",
+          "price": 60.25,
+          "quantity": 4
+        },
+        {
+          "name": "Wireless Earbuds",
+          "id": "P001",
+          "price": 60.25,
+          "quantity": 2
+        },
+        {
+          "name": "Wireless Charger",
+          "id": "P009",
+          "price": 39.99,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "RFD-064",
+      "reason": "Item not as described",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "1499.95",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "id": "RFD-065",
+      "reason": "Defective product",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "1599.95",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 5
+        },
+        {
+          "name": "Bluetooth Speaker",
+          "id": "P003",
+          "price": 100,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "RFD-066",
+      "reason": "Shipping damage",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "449.97",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Wireless Charger",
+          "id": "P009",
+          "price": 39.99,
+          "quantity": 3
+        },
+        {
+          "name": "USB-C Hub",
+          "id": "P010",
+          "price": 55,
+          "quantity": 5
+        },
+        {
+          "name": "USB-C Hub",
+          "id": "P010",
+          "price": 55,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "RFD-067",
+      "reason": "Item not as described",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "379.93",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Mechanical Keyboard",
+          "id": "P007",
+          "price": 89.99,
+          "quantity": 2
+        },
+        {
+          "name": "Wireless Charger",
+          "id": "P009",
+          "price": 39.99,
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "id": "RFD-068",
+      "reason": "Customer changed mind",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "1849.91",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 4
+        },
+        {
+          "name": "Bluetooth Speaker",
+          "id": "P003",
+          "price": 100,
+          "quantity": 2
+        },
+        {
+          "name": "Mechanical Keyboard",
+          "id": "P007",
+          "price": 89.99,
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "id": "RFD-069",
+      "reason": "Shipping damage",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "375.00",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "USB-C Hub",
+          "id": "P010",
+          "price": 55,
+          "quantity": 4
+        },
+        {
+          "name": "USB-C Hub",
+          "id": "P010",
+          "price": 55,
+          "quantity": 1
+        },
+        {
+          "name": "Bluetooth Speaker",
+          "id": "P003",
+          "price": 100,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "RFD-070",
+      "reason": "Item arrived late",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "762.97",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 3
+        },
+        {
+          "name": "USB-C Hub",
+          "id": "P010",
+          "price": 55,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-071",
+      "reason": "Shipping damage",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "1441.20",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Wireless Earbuds",
+          "id": "P001",
+          "price": 60.25,
+          "quantity": 1
+        },
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 1
+        },
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-072",
+      "reason": "Size issue",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "137.97",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Gaming Mouse",
+          "id": "P006",
+          "price": 45.99,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "RFD-073",
+      "reason": "Item not as described",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "200.00",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Running Shoes",
+          "id": "P004",
+          "price": 50,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-074",
+      "reason": "Color mismatch",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "775.00",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Bluetooth Speaker",
+          "id": "P003",
+          "price": 100,
+          "quantity": 5
+        },
+        {
+          "name": "USB-C Hub",
+          "id": "P010",
+          "price": 55,
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "id": "RFD-075",
+      "reason": "Shipping damage",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "300.00",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Bluetooth Speaker",
+          "id": "P003",
+          "price": 100,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "RFD-076",
+      "reason": "Item not as described",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "241.00",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Wireless Earbuds",
+          "id": "P001",
+          "price": 60.25,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-077",
+      "reason": "Wrong item received",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "674.98",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Mechanical Keyboard",
+          "id": "P007",
+          "price": 89.99,
+          "quantity": 2
+        },
+        {
+          "name": "USB-C Hub",
+          "id": "P010",
+          "price": 55,
+          "quantity": 5
+        },
+        {
+          "name": "USB-C Hub",
+          "id": "P010",
+          "price": 55,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-078",
+      "reason": "Shipping damage",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "383.91",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Gaming Mouse",
+          "id": "P006",
+          "price": 45.99,
+          "quantity": 4
+        },
+        {
+          "name": "Wireless Charger",
+          "id": "P009",
+          "price": 39.99,
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "id": "RFD-079",
+      "reason": "Item arrived late",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "380.22",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Wireless Charger",
+          "id": "P009",
+          "price": 39.99,
+          "quantity": 3
+        },
+        {
+          "name": "Running Shoes",
+          "id": "P004",
+          "price": 50,
+          "quantity": 4
+        },
+        {
+          "name": "Wireless Earbuds",
+          "id": "P001",
+          "price": 60.25,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "RFD-080",
+      "reason": "Wrong item received",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "1923.92",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 4
+        },
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-081",
+      "reason": "Defective product",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "491.98",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Bluetooth Speaker",
+          "id": "P003",
+          "price": 100,
+          "quantity": 4
+        },
+        {
+          "name": "Gaming Mouse",
+          "id": "P006",
+          "price": 45.99,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "RFD-082",
+      "reason": "Item arrived late",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "1130.89",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Mechanical Keyboard",
+          "id": "P007",
+          "price": 89.99,
+          "quantity": 5
+        },
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 3
+        },
+        {
+          "name": "Gaming Mouse",
+          "id": "P006",
+          "price": 45.99,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "RFD-083",
+      "reason": "Shipping damage",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "1680.70",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Wireless Earbuds",
+          "id": "P001",
+          "price": 60.25,
+          "quantity": 3
+        },
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "id": "RFD-084",
+      "reason": "Payment issue",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "1564.94",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Smartphone Case",
+          "id": "P002",
+          "price": 25,
+          "quantity": 1
+        },
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 5
+        },
+        {
+          "name": "Wireless Charger",
+          "id": "P009",
+          "price": 39.99,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "RFD-085",
+      "reason": "Color mismatch",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "636.98",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "USB-C Hub",
+          "id": "P010",
+          "price": 55,
+          "quantity": 5
+        },
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "RFD-086",
+      "reason": "Duplicate order",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "1724.95",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 5
+        },
+        {
+          "name": "Running Shoes",
+          "id": "P004",
+          "price": 50,
+          "quantity": 3
+        },
+        {
+          "name": "Smartphone Case",
+          "id": "P002",
+          "price": 25,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "RFD-087",
+      "reason": "Defective product",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "1159.90",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Wireless Charger",
+          "id": "P009",
+          "price": 39.99,
+          "quantity": 5
+        },
+        {
+          "name": "USB-C Hub",
+          "id": "P010",
+          "price": 55,
+          "quantity": 1
+        },
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "id": "RFD-088",
+      "reason": "Item not as described",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "469.92",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Mechanical Keyboard",
+          "id": "P007",
+          "price": 89.99,
+          "quantity": 3
+        },
+        {
+          "name": "Wireless Charger",
+          "id": "P009",
+          "price": 39.99,
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "id": "RFD-089",
+      "reason": "Payment issue",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "323.95",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Mechanical Keyboard",
+          "id": "P007",
+          "price": 89.99,
+          "quantity": 1
+        },
+        {
+          "name": "Running Shoes",
+          "id": "P004",
+          "price": 50,
+          "quantity": 1
+        },
+        {
+          "name": "Gaming Mouse",
+          "id": "P006",
+          "price": 45.99,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-090",
+      "reason": "Duplicate order",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "120.50",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Wireless Earbuds",
+          "id": "P001",
+          "price": 60.25,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "RFD-091",
+      "reason": "Wrong item received",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "438.94",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Smartphone Case",
+          "id": "P002",
+          "price": 25,
+          "quantity": 3
+        },
+        {
+          "name": "Gaming Mouse",
+          "id": "P006",
+          "price": 45.99,
+          "quantity": 4
+        },
+        {
+          "name": "Mechanical Keyboard",
+          "id": "P007",
+          "price": 89.99,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "RFD-092",
+      "reason": "Shipping damage",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "883.92",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Wireless Charger",
+          "id": "P009",
+          "price": 39.99,
+          "quantity": 3
+        },
+        {
+          "name": "Wireless Charger",
+          "id": "P009",
+          "price": 39.99,
+          "quantity": 1
+        },
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-093",
+      "reason": "Item arrived late",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "1459.95",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 4
+        },
+        {
+          "name": "Wireless Charger",
+          "id": "P009",
+          "price": 39.99,
+          "quantity": 1
+        },
+        {
+          "name": "USB-C Hub",
+          "id": "P010",
+          "price": 55,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-094",
+      "reason": "Defective product",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "410.94",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "USB-C Hub",
+          "id": "P010",
+          "price": 55,
+          "quantity": 3
+        },
+        {
+          "name": "Wireless Charger",
+          "id": "P009",
+          "price": 39.99,
+          "quantity": 5
+        },
+        {
+          "name": "Gaming Mouse",
+          "id": "P006",
+          "price": 45.99,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "RFD-095",
+      "reason": "Duplicate order",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "783.97",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 3
+        },
+        {
+          "name": "Wireless Earbuds",
+          "id": "P001",
+          "price": 60.25,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-096",
+      "reason": "Customer changed mind",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "754.98",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "USB-C Hub",
+          "id": "P010",
+          "price": 55,
+          "quantity": 1
+        },
+        {
+          "name": "Smartphone Case",
+          "id": "P002",
+          "price": 25,
+          "quantity": 4
+        },
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "RFD-097",
+      "reason": "Duplicate order",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "354.95",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Gaming Mouse",
+          "id": "P006",
+          "price": 45.99,
+          "quantity": 5
+        },
+        {
+          "name": "Smartphone Case",
+          "id": "P002",
+          "price": 25,
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "id": "RFD-098",
+      "reason": "Color mismatch",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "100.00",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Bluetooth Speaker",
+          "id": "P003",
+          "price": 100,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "RFD-099",
+      "reason": "Shipping damage",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "1349.96",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Running Shoes",
+          "id": "P004",
+          "price": 50,
+          "quantity": 3
+        },
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-100",
+      "reason": "Wrong item received",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "217.95",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Gaming Mouse",
+          "id": "P006",
+          "price": 45.99,
+          "quantity": 3
+        },
+        {
+          "name": "Wireless Charger",
+          "id": "P009",
+          "price": 39.99,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "RFD-101",
+      "reason": "Customer changed mind",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "180.99",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "RFD-102",
+      "reason": "Item not as described",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "1199.96",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-103",
+      "reason": "Customer changed mind",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "300.00",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Running Shoes",
+          "id": "P004",
+          "price": 50,
+          "quantity": 4
+        },
+        {
+          "name": "Running Shoes",
+          "id": "P004",
+          "price": 50,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "RFD-104",
+      "reason": "Color mismatch",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "165.00",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "USB-C Hub",
+          "id": "P010",
+          "price": 55,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "RFD-105",
+      "reason": "Item arrived late",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "354.99",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "USB-C Hub",
+          "id": "P010",
+          "price": 55,
+          "quantity": 3
+        },
+        {
+          "name": "Mechanical Keyboard",
+          "id": "P007",
+          "price": 89.99,
+          "quantity": 1
+        },
+        {
+          "name": "Smartphone Case",
+          "id": "P002",
+          "price": 25,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-106",
+      "reason": "Duplicate order",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "350.00",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "USB-C Hub",
+          "id": "P010",
+          "price": 55,
+          "quantity": 4
+        },
+        {
+          "name": "Smartphone Case",
+          "id": "P002",
+          "price": 25,
+          "quantity": 3
+        },
+        {
+          "name": "USB-C Hub",
+          "id": "P010",
+          "price": 55,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "RFD-107",
+      "reason": "Item not as described",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "293.96",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "USB-C Hub",
+          "id": "P010",
+          "price": 55,
+          "quantity": 2
+        },
+        {
+          "name": "Gaming Mouse",
+          "id": "P006",
+          "price": 45.99,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-108",
+      "reason": "Customer changed mind",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "861.93",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Gaming Mouse",
+          "id": "P006",
+          "price": 45.99,
+          "quantity": 3
+        },
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-109",
+      "reason": "Item not as described",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "91.98",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Gaming Mouse",
+          "id": "P006",
+          "price": 45.99,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "RFD-110",
+      "reason": "Item arrived late",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "50.00",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Smartphone Case",
+          "id": "P002",
+          "price": 25,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "RFD-111",
+      "reason": "Wrong item received",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "711.24",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "USB-C Hub",
+          "id": "P010",
+          "price": 55,
+          "quantity": 2
+        },
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 1
+        },
+        {
+          "name": "Wireless Earbuds",
+          "id": "P001",
+          "price": 60.25,
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "id": "RFD-112",
+      "reason": "Payment issue",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "333.22",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 1
+        },
+        {
+          "name": "Wireless Earbuds",
+          "id": "P001",
+          "price": 60.25,
+          "quantity": 1
+        },
+        {
+          "name": "Gaming Mouse",
+          "id": "P006",
+          "price": 45.99,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "RFD-113",
+      "reason": "Item not as described",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "383.96",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Gaming Mouse",
+          "id": "P006",
+          "price": 45.99,
+          "quantity": 4
+        },
+        {
+          "name": "Bluetooth Speaker",
+          "id": "P003",
+          "price": 100,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "RFD-114",
+      "reason": "Shipping damage",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "899.97",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "RFD-115",
+      "reason": "Duplicate order",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "100.00",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Bluetooth Speaker",
+          "id": "P003",
+          "price": 100,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "RFD-116",
+      "reason": "Duplicate order",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "751.20",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Mechanical Keyboard",
+          "id": "P007",
+          "price": 89.99,
+          "quantity": 5
+        },
+        {
+          "name": "Wireless Earbuds",
+          "id": "P001",
+          "price": 60.25,
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "id": "RFD-117",
+      "reason": "Wrong item received",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "100.00",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Running Shoes",
+          "id": "P004",
+          "price": 50,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "RFD-118",
+      "reason": "Color mismatch",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "1099.97",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 3
+        },
+        {
+          "name": "Running Shoes",
+          "id": "P004",
+          "price": 50,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-119",
+      "reason": "Color mismatch",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "120.50",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Wireless Earbuds",
+          "id": "P001",
+          "price": 60.25,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "RFD-120",
+      "reason": "Shipping damage",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "361.98",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "RFD-121",
+      "reason": "Payment issue",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "210.00",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "USB-C Hub",
+          "id": "P010",
+          "price": 55,
+          "quantity": 2
+        },
+        {
+          "name": "Smartphone Case",
+          "id": "P002",
+          "price": 25,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-122",
+      "reason": "Payment issue",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "359.96",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Mechanical Keyboard",
+          "id": "P007",
+          "price": 89.99,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-123",
+      "reason": "Size issue",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "542.97",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "RFD-124",
+      "reason": "Item arrived late",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "359.96",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Mechanical Keyboard",
+          "id": "P007",
+          "price": 89.99,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-125",
+      "reason": "Duplicate order",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "150.00",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Running Shoes",
+          "id": "P004",
+          "price": 50,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "RFD-126",
+      "reason": "Item not as described",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "89.99",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Mechanical Keyboard",
+          "id": "P007",
+          "price": 89.99,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "RFD-127",
+      "reason": "Item arrived late",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "1254.96",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "USB-C Hub",
+          "id": "P010",
+          "price": 55,
+          "quantity": 1
+        },
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-128",
+      "reason": "Customer changed mind",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "1199.96",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-129",
+      "reason": "Wrong item received",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "830.20",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 4
+        },
+        {
+          "name": "Gaming Mouse",
+          "id": "P006",
+          "price": 45.99,
+          "quantity": 1
+        },
+        {
+          "name": "Wireless Earbuds",
+          "id": "P001",
+          "price": 60.25,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "RFD-130",
+      "reason": "Item not as described",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "541.96",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Mechanical Keyboard",
+          "id": "P007",
+          "price": 89.99,
+          "quantity": 2
+        },
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "RFD-131",
+      "reason": "Payment issue",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "1064.97",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "USB-C Hub",
+          "id": "P010",
+          "price": 55,
+          "quantity": 3
+        },
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "RFD-132",
+      "reason": "Shipping damage",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "800.00",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Bluetooth Speaker",
+          "id": "P003",
+          "price": 100,
+          "quantity": 2
+        },
+        {
+          "name": "Bluetooth Speaker",
+          "id": "P003",
+          "price": 100,
+          "quantity": 2
+        },
+        {
+          "name": "Bluetooth Speaker",
+          "id": "P003",
+          "price": 100,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-133",
+      "reason": "Color mismatch",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "379.98",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Mechanical Keyboard",
+          "id": "P007",
+          "price": 89.99,
+          "quantity": 2
+        },
+        {
+          "name": "Bluetooth Speaker",
+          "id": "P003",
+          "price": 100,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "RFD-134",
+      "reason": "Shipping damage",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "2061.88",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 2
+        },
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 5
+        },
+        {
+          "name": "Wireless Charger",
+          "id": "P009",
+          "price": 39.99,
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "id": "RFD-135",
+      "reason": "Item not as described",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "225.00",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Smartphone Case",
+          "id": "P002",
+          "price": 25,
+          "quantity": 5
+        },
+        {
+          "name": "Bluetooth Speaker",
+          "id": "P003",
+          "price": 100,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "RFD-136",
+      "reason": "Item arrived late",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "561.98",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Bluetooth Speaker",
+          "id": "P003",
+          "price": 100,
+          "quantity": 2
+        },
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "RFD-137",
+      "reason": "Shipping damage",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "760.47",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Wireless Earbuds",
+          "id": "P001",
+          "price": 60.25,
+          "quantity": 2
+        },
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 2
+        },
+        {
+          "name": "Wireless Charger",
+          "id": "P009",
+          "price": 39.99,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "RFD-138",
+      "reason": "Customer changed mind",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "630.70",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Mechanical Keyboard",
+          "id": "P007",
+          "price": 89.99,
+          "quantity": 5
+        },
+        {
+          "name": "Wireless Earbuds",
+          "id": "P001",
+          "price": 60.25,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "RFD-139",
+      "reason": "Duplicate order",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "299.99",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "RFD-140",
+      "reason": "Item not as described",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "1799.94",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 1
+        },
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "id": "RFD-141",
+      "reason": "Color mismatch",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "1699.90",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 5
+        },
+        {
+          "name": "Wireless Charger",
+          "id": "P009",
+          "price": 39.99,
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "id": "RFD-142",
+      "reason": "Defective product",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "559.96",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Mechanical Keyboard",
+          "id": "P007",
+          "price": 89.99,
+          "quantity": 4
+        },
+        {
+          "name": "Bluetooth Speaker",
+          "id": "P003",
+          "price": 100,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "RFD-143",
+      "reason": "Color mismatch",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "79.98",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Wireless Charger",
+          "id": "P009",
+          "price": 39.99,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "RFD-144",
+      "reason": "Item not as described",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "537.97",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Gaming Mouse",
+          "id": "P006",
+          "price": 45.99,
+          "quantity": 3
+        },
+        {
+          "name": "Bluetooth Speaker",
+          "id": "P003",
+          "price": 100,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-145",
+      "reason": "Size issue",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "495.00",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "USB-C Hub",
+          "id": "P010",
+          "price": 55,
+          "quantity": 5
+        },
+        {
+          "name": "USB-C Hub",
+          "id": "P010",
+          "price": 55,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-146",
+      "reason": "Wrong item received",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "574.96",
+      "active": false,
+      "decision": null,
+      "items": [
+        {
+          "name": "Running Shoes",
+          "id": "P004",
+          "price": 50,
+          "quantity": 3
+        },
+        {
+          "name": "Wireless Earbuds",
+          "id": "P001",
+          "price": 60.25,
+          "quantity": 4
+        },
+        {
+          "name": "Gaming Mouse",
+          "id": "P006",
+          "price": 45.99,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-147",
+      "reason": "Shipping damage",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "119.97",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Wireless Charger",
+          "id": "P009",
+          "price": 39.99,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "RFD-148",
+      "reason": "Duplicate order",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "1223.96",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Bluetooth Speaker",
+          "id": "P003",
+          "price": 100,
+          "quantity": 5
+        },
+        {
+          "name": "Smartwatch",
+          "id": "P005",
+          "price": 180.99,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "RFD-149",
+      "reason": "Wrong item received",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "119.97",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "Wireless Charger",
+          "id": "P009",
+          "price": 39.99,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "RFD-150",
+      "reason": "Shipping damage",
+      "store_name": "Yamm Store",
+      "store_logo": "/logo.svg",
+      "store_url": "https://yamm.sa",
+      "amount": "1199.96",
+      "active": true,
+      "decision": null,
+      "items": [
+        {
+          "name": "4K Monitor",
+          "id": "P008",
+          "price": 299.99,
+          "quantity": 4
         }
       ]
     }

@@ -20,7 +20,7 @@ const NavigationLayout = ({ children }: { children: React.ReactNode }) => {
                     <MenuIcon sx={{ fontSize: "44px" }} />
                 </button>
                 <div className='flex-1 hidden lg:block'>
-                    <img src="/logo.svg" alt="yamm logo" width="97px" height="44px" />
+                    <img src="/logo.svg" alt="yamm logo" width="60px" height="50px" />
                 </div>
 
                 <AppBar />
