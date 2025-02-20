@@ -102,6 +102,11 @@ npm run preview
 npm run lint
 ```
 
+### 6️⃣ Run JSON Server
+```sh
+npx json-server --watch db.json --port 5001
+```
+
 ---
 
 ## 🚀 Future Improvements
