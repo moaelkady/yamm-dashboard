@@ -2210,7 +2210,7 @@
       "store_url": "https://yamm.sa",
       "amount": "438.94",
       "active": false,
-      "decision": "",
+      "decision": "accept",
       "items": [
         {
           "name": "Smartphone Case",

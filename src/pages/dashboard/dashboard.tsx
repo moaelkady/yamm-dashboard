@@ -1,7 +1,10 @@
+import { memo } from 'react';
 import { useRefundOrders } from "../../hooks/useRefundOrders";
 import RefundOrdersTable from "../../components/RefundOrdersTable";
-const Dashboard = () => {
+
+const Dashboard: React.FC = () => {
     const { state, isFetching, goToNextPage, goToPrevPage, toggleOrderStatus, updateOrderDecision } = useRefundOrders();
+
     return (
         <div>
             {isFetching ? "Loading" : state.error ? "error" : (
@@ -19,4 +22,4 @@ const Dashboard = () => {
     );
 };
 
-export default Dashboard;
+export default memo(Dashboard);
