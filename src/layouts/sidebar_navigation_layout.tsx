@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import NavigationSidebar from '../components/navigation_sidebar';
 import MenuIcon from '@mui/icons-material/Menu';
 import AppBar from '../components/appbar';
@@ -6,9 +6,9 @@ import AppBar from '../components/appbar';
 const NavigationLayout = ({ children }: { children: React.ReactNode }) => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-    const toggleSidebar = () => {
-        setIsSidebarOpen(!isSidebarOpen);
-    };
+    const toggleSidebar = useCallback(() => {
+        setIsSidebarOpen(prevState => !prevState);
+    }, []);
 
     return (
         <div className="h-screen flex flex-col" style={{ maxWidth: '100vw', overflow: "auto" }}>
