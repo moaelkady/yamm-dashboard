@@ -1,6 +1,7 @@
-import { List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
+import {memo} from 'react';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
 import { sidebarItems } from '../data/sidebar_items';
 
 const NavigationSidebar = () => {
@@ -27,4 +28,4 @@ const NavigationSidebar = () => {
     );
 };
 
-export default NavigationSidebar;
+export default memo(NavigationSidebar);
