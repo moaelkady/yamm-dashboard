@@ -1,9 +1,18 @@
+import { memo, useCallback } from 'react';
 import { Link } from "react-router-dom";
 import { IconButton } from "@mui/material";
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
-import { RefundOrdersTableProps, OrderDecision } from "../types/order_record";
+import { RefundOrdersTableProps, OrderDecision, OrderRecord } from "../types/order_record";
 
 const RefundOrdersTable: React.FC<RefundOrdersTableProps> = ({ orders = [], page, pages, goToNextPage, goToPrevPage, toggleOrderStatus, updateOrderDecision }) => {
+    const handleToggleOrderStatus = useCallback((orderId: string, order: OrderRecord) => {
+        toggleOrderStatus(orderId, { ...order, active: !order.active });
+    }, [toggleOrderStatus]);
+
+    const handleUpdateOrderDecision = useCallback((orderId: string, order: OrderRecord, decision: OrderDecision) => {
+        updateOrderDecision(orderId, { ...order, decision }, decision);
+    }, [updateOrderDecision]);
+
     return (
         <div className="bg-white shadow-md rounded-lg overflow-auto">
             <table className="w-full border-collapse">
@@ -40,7 +49,7 @@ const RefundOrdersTable: React.FC<RefundOrdersTableProps> = ({ orders = [], page
                                 <div
                                     className={`relative w-12 h-6 flex items-center rounded-full p-1 cursor-pointer transition ${order.active ? "bg-green-500" : "bg-gray-300"
                                         }`}
-                                    onClick={() => toggleOrderStatus(order.id, { ...order, active: !order.active })}
+                                    onClick={() => handleToggleOrderStatus(order.id, order)}
                                 >
                                     <div
                                         className={`w-5 h-5 bg-white rounded-full shadow-md transform transition ${order.active ? "translate-x-6" : "translate-x-0"
@@ -52,7 +61,7 @@ const RefundOrdersTable: React.FC<RefundOrdersTableProps> = ({ orders = [], page
                                 <select
                                     className="p-2 border rounded bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
                                     value={order.decision || ""}
-                                    onChange={(e) => updateOrderDecision(order.id, { ...order, decision: e.target.value as OrderDecision }, e.target.value as OrderDecision)}
+                                    onChange={(e) => handleUpdateOrderDecision(order.id, order, e.target.value as OrderDecision)}
                                 >
                                     <option value="">Select Decision</option>
                                     <option value="accept">Accept</option>
@@ -95,4 +104,4 @@ const RefundOrdersTable: React.FC<RefundOrdersTableProps> = ({ orders = [], page
     );
 };
 
-export default RefundOrdersTable;
+export default memo(RefundOrdersTable);
