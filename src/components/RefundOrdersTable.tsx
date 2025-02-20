@@ -1,17 +1,7 @@
 import { Link } from "react-router-dom";
 import { IconButton } from "@mui/material";
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
-import { OrderRecord, OrderDecision } from "../types/order_record";
-
-interface RefundOrdersTableProps {
-    orders: OrderRecord[];
-    page: number,
-    pages: number,
-    goToNextPage: () => void;
-    goToPrevPage: () => void;
-    toggleOrderStatus: (orderId: string, newBody: object) => Promise<void>;
-    updateOrderDecision: (orderId: string, newBody: object, decesion: OrderDecision) => Promise<void>;
-}
+import { RefundOrdersTableProps, OrderDecision } from "../types/order_record";
 
 const RefundOrdersTable: React.FC<RefundOrdersTableProps> = ({ orders = [], page, pages, goToNextPage, goToPrevPage, toggleOrderStatus, updateOrderDecision }) => {
     return (

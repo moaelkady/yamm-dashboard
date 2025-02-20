@@ -25,3 +25,23 @@ export interface OrdersState {
     error: string | null;
     page: number;
 }
+
+export interface RefundOrdersTableProps {
+    orders: OrderRecord[];
+    page: number,
+    pages: number,
+    goToNextPage: () => void;
+    goToPrevPage: () => void;
+    toggleOrderStatus: (orderId: string, newBody: object) => Promise<void>;
+    updateOrderDecision: (orderId: string, newBody: object, decesion: OrderDecision) => Promise<void>;
+}
+
+export interface OrdersContextProps {
+    state: OrdersState;
+    isFetching: boolean;
+    setPage: (page: number) => void;
+    goToNextPage: () => void;
+    goToPrevPage: () => void;
+    toggleOrderStatus: (orderId: string, newBody: object) => Promise<void>;
+    updateOrderDecision: (orderId: string, newBody: object, decision: OrderDecision) => Promise<void>;
+}
