@@ -45,3 +45,22 @@ export interface OrdersContextProps {
     toggleOrderStatus: (orderId: string, newBody: object) => Promise<void>;
     updateOrderDecision: (orderId: string, newBody: object, decision: OrderDecision) => Promise<void>;
 }
+
+export interface OrdersTableProps {
+    orders: OrderRecord[];
+    handleToggleOrderStatus: (orderId: string, order: OrderRecord) => void;
+    handleUpdateOrderDecision: (orderId: string, order: OrderRecord, decision: OrderDecision) => void;
+}
+
+export interface OrderRowProps {
+    order: OrderRecord;
+    handleToggleOrderStatus: (orderId: string, order: OrderRecord) => void;
+    handleUpdateOrderDecision: (orderId: string, order: OrderRecord, decision: OrderDecision) => void;
+}
+
+export interface PaginationControlsProps {
+    page: number;
+    pages: number;
+    goToNextPage: () => void;
+    goToPrevPage: () => void;
+}
