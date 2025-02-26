@@ -709,7 +709,7 @@
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
       "amount": "354.95",
-      "active": false,
+      "active": true,
       "decision": null,
       "items": [
         {
@@ -733,8 +733,8 @@
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
       "amount": "814.90",
-      "active": false,
-      "decision": null,
+      "active": true,
+      "decision": "reject",
       "items": [
         {
           "name": "Smartwatch",
@@ -901,7 +901,7 @@
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
       "amount": "550.96",
-      "active": false,
+      "active": true,
       "decision": null,
       "items": [
         {
@@ -3338,7 +3338,7 @@
       "store_url": "https://yamm.sa",
       "amount": "299.99",
       "active": true,
-      "decision": null,
+      "decision": "accept",
       "items": [
         {
           "name": "4K Monitor",

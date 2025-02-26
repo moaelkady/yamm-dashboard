@@ -4,6 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import { RefundOrdersApi } from "../repository/RefundOrdersApi";
 import { OrderRecord, OrdersState } from "../types/order_record";
 import { OrdersActionTypes } from "../utils/enums";
+import { useQueryClient } from "@tanstack/react-query";
 import { RefundOrdersContext } from "./RefundOrdersContext";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -16,13 +17,14 @@ type OrdersAction =
     | { type: OrdersActionTypes.NEXT_PAGE }
     | { type: OrdersActionTypes.PREV_PAGE };
 
+
+const storedPage = localStorage.getItem("pageNumber");
 const getInitialState = (): OrdersState => {
-    const storedPage = localStorage.getItem("pageNumber");
     return {
         data: [],
         pages: 0,
         error: null,
-        page: storedPage ? JSON.parse(storedPage) : 1, // just to get last page stored
+        page: storedPage ? JSON.parse(storedPage) : 1,
     };
 };
 
@@ -73,6 +75,7 @@ export const RefundOrdersProvider: React.FC<{ children: ReactNode }> = ({ childr
     const { data, error, isFetching } = useQuery<{ data: OrderRecord[], pages: number, page: number }, Error>({
         queryKey: ["refundOrders", state.page],
         queryFn: () => RefundOrdersApi.fetchOrders(state.page, 15),
+        staleTime: 1000 * 60 * 5,
     });
 
 
@@ -147,6 +150,18 @@ export const RefundOrdersProvider: React.FC<{ children: ReactNode }> = ({ childr
             }
         }
     }, []);
+
+
+    const queryClient = useQueryClient();
+    useEffect(() => {
+        const nextPage = state.page + 1;
+        if (nextPage > state.pages) return;
+        queryClient.prefetchQuery({
+            queryKey: ["refundOrders", nextPage],
+            queryFn: () => RefundOrdersApi.fetchOrders(nextPage, 15),
+            staleTime: 1000 * 60 * 5,
+        });
+    }, [state.page, state.pages, queryClient]);
 
     return (
         <RefundOrdersContext.Provider value={{ state, isFetching, setPage, goToNextPage, goToPrevPage, toggleOrderStatus, updateOrderDecision }}>
