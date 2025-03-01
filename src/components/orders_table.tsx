@@ -1,8 +1,8 @@
 import OrderRow from './order_row';
-import { OrdersTableProps } from "../types/order_record";
 import { tableHeaders } from '../data/table_headers';
+import { OrdersTableProps } from "../types/order_record";
 
-const OrdersTable: React.FC<OrdersTableProps> = ({ orders, handleUpdateOrderDecision }) => (
+const OrdersTable: React.FC<OrdersTableProps> = ({ orders }) => (
     <table className="w-full border-collapse">
         <thead className="bg-gray-100 text-gray-700">
             <tr>
@@ -16,7 +16,6 @@ const OrdersTable: React.FC<OrdersTableProps> = ({ orders, handleUpdateOrderDeci
                 <OrderRow
                     key={order.id}
                     order={order}
-                    handleUpdateOrderDecision={handleUpdateOrderDecision}
                 />
             ))}
         </tbody>

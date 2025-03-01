@@ -1,18 +1,22 @@
 import { Link } from "react-router-dom";
 import { IconButton } from "@mui/material";
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
+import useRefundOrders from "../hooks/useRefundOrders";
 import useToggleOrderStatus from "../hooks/useToggleOrderStatus";
-import { OrderDecision, OrderRowProps } from "../types/order_record";
-import { useRefundOrders } from "../hooks/useRefundOrders";
+import useUpdateOrderDecision from "../hooks/useUpdateOrderDecision";
+import { OrderRowProps, OrderDecision } from "../types/order_record";
 
-const OrderRow: React.FC<OrderRowProps> = ({ order, handleUpdateOrderDecision }) => {
-    const handleDecisionChange = (e: React.ChangeEvent<HTMLSelectElement>) => handleUpdateOrderDecision(order.id, order, e.target.value as OrderDecision);
+const OrderRow: React.FC<OrderRowProps> = ({ order }) => {
     const { dispatch } = useRefundOrders();
     const toggler = useToggleOrderStatus(dispatch);
+    const updater = useUpdateOrderDecision(dispatch);
+
+    const handleDecisionChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+        updater.mutate({ orderId: order.id, newBody: { ...order, decision: e.target.value as OrderDecision } });
+    }
     const handleStatusToggle = () => {
         toggler.mutate({ orderId: order.id, newBody: { ...order, active: !order.active } })
     };
-
     const tableData = [
         { content: order.id, className: "text-center" },
         { content: order.reason, className: "text-center" },

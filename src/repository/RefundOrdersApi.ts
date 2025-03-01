@@ -30,7 +30,7 @@ export const RefundOrdersApi = {
         return response.data;
     },
 
-    updateOrderDecision: async (orderId: string, newBody: OrderRecord): Promise<OrderRecord> => {
+    updateOrderDecision: async ({ orderId, newBody }: { orderId: string, newBody: OrderRecord }): Promise<OrderRecord> => {
         const response = await NetworkCall.makeCall<OrderRecord>({
             endPoint: `${ServicesURLs.ORDERS}/${orderId}`,
             method: HttpMethod.PUT,

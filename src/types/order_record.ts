@@ -34,7 +34,6 @@ export interface RefundOrdersTableProps {
     pages: number,
     goToNextPage: () => void;
     goToPrevPage: () => void;
-    updateOrderDecision: (orderId: string, newBody: OrderRecord, decesion: OrderDecision) => Promise<OrderRecord>;
 }
 
 export interface OrdersContextProps {
@@ -43,18 +42,15 @@ export interface OrdersContextProps {
     setPage: (page: number) => void;
     goToNextPage: () => void;
     goToPrevPage: () => void;
-    updateOrderDecision: (orderId: string, newBody: OrderRecord, decision: OrderDecision) => Promise<OrderRecord>;
     dispatch: React.Dispatch<OrdersAction>;
 }
 
 export interface OrdersTableProps {
     orders: OrderRecord[];
-    handleUpdateOrderDecision: (orderId: string, order: OrderRecord, decision: OrderDecision) => OrderRecord;
 }
 
 export interface OrderRowProps {
     order: OrderRecord;
-    handleUpdateOrderDecision: (orderId: string, order: OrderRecord, decision: OrderDecision) => OrderRecord;
 }
 
 export interface PaginationControlsProps {

@@ -1,15 +1,12 @@
 import React, { useReducer, ReactNode, useEffect } from "react";
-import { toast } from "react-toastify";
 import { useQueryClient } from "@tanstack/react-query";
-import useGetComments from "../hooks/useGetRefundOrders";
 import { RefundOrdersApi } from "../repository/RefundOrdersApi";
-import { OrderRecord, OrdersState } from "../types/order_record";
-import { OrdersActionTypes } from "../utils/enums";
-import { OrdersAction } from "../types/order_action";
+import useGetComments from "../hooks/useGetRefundOrders";
 import { RefundOrdersContext } from "./RefundOrdersContext";
+import { OrdersState } from "../types/order_record";
+import { OrdersAction } from "../types/order_action";
+import { OrdersActionTypes } from "../utils/enums";
 import "react-toastify/dist/ReactToastify.css";
-
-
 
 const storedPage = localStorage.getItem("pageNumber");
 const getInitialState = (): OrdersState => {
@@ -67,9 +64,6 @@ export const RefundOrdersProvider: React.FC<{ children: ReactNode }> = ({ childr
     const [state, dispatch] = useReducer(ordersReducer, getInitialState());
     const { data, error, isFetching } = useGetComments(state);
 
-
-
-
     const setPage = (page: number) => {
         if (page >= 1 && page <= state.pages) {
             dispatch({ type: OrdersActionTypes.SET_PAGE, payload: page });
@@ -82,22 +76,6 @@ export const RefundOrdersProvider: React.FC<{ children: ReactNode }> = ({ childr
 
     const goToPrevPage = () => {
         dispatch({ type: OrdersActionTypes.PREV_PAGE });
-    };
-
-    const updateOrderDecision = async (orderId: string, newBody: OrderRecord, decision: "reject" | "accept" | "escalate" | null) => {
-        try {
-            const updatedOrder = await RefundOrdersApi.updateOrderDecision(orderId, newBody);
-            dispatch({
-                type: OrdersActionTypes.UPDATE_ORDER_DECISION,
-                payload: { orderId, newBody, decision },
-            });
-            toast.success(`Order decision changed to ${decision === null ? "Pending" : decision.length > 0 ? decision : "Pending"}`);
-            return updatedOrder;
-        } catch (error) {
-            console.error("Failed to update order decision", error);
-            toast.error("Failed to update decision.");
-            throw new Error("Failed to update order decision");
-        }
     };
 
     // Update state when data is fetched
@@ -159,7 +137,7 @@ export const RefundOrdersProvider: React.FC<{ children: ReactNode }> = ({ childr
 
 
     return (
-        <RefundOrdersContext.Provider value={{ state, isFetching, setPage, goToNextPage, goToPrevPage, updateOrderDecision, dispatch }}>
+        <RefundOrdersContext.Provider value={{ state, isFetching, setPage, goToNextPage, goToPrevPage, dispatch }}>
             {children}
         </RefundOrdersContext.Provider>
     );
