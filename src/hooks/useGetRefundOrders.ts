@@ -1,9 +1,8 @@
 import { useQuery, UseQueryResult } from "@tanstack/react-query";
 import { RefundOrdersApi } from "../repository/RefundOrdersApi";
-import { OrderRecord, OrdersState } from './../types/order_record';
+import { OrdersState, getRefundOrdersProps } from './../types/order_record';
 
-
-const useGetComments = (state: OrdersState): UseQueryResult<{ data: OrderRecord[], pages: number, page: number }> => {
+const useGetRefundOrders = (state: OrdersState): UseQueryResult<getRefundOrdersProps> => {
     return useQuery({
         queryKey: ["refundOrders", state.page],
         queryFn: () => RefundOrdersApi.fetchOrders(state.page, 15),
@@ -11,4 +10,4 @@ const useGetComments = (state: OrdersState): UseQueryResult<{ data: OrderRecord[
     });
 };
 
-export default useGetComments;
+export default useGetRefundOrders;

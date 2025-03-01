@@ -64,3 +64,9 @@ export interface OrderStatusToggleProps {
     orderId: string;
     newBody: OrderRecord;
 }
+
+export interface getRefundOrdersProps {
+    data: OrderRecord[];
+    pages: number;
+    page: number;
+}

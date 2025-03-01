@@ -7,8 +7,8 @@ import useUpdateOrderDecision from "../hooks/useUpdateOrderDecision";
 import { OrderRowProps, OrderDecision } from "../types/order_record";
 
 const OrderRow: React.FC<OrderRowProps> = ({ order }) => {
-    const { dispatch } = useRefundOrders();
-    const toggler = useToggleOrderStatus(dispatch);
+    const { dispatch, state } = useRefundOrders();
+    const toggler = useToggleOrderStatus(dispatch, state);
     const updater = useUpdateOrderDecision(dispatch);
 
     const handleDecisionChange = (e: React.ChangeEvent<HTMLSelectElement>) => {

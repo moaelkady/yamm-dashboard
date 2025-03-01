@@ -8,7 +8,7 @@
       "store_url": "https://yamm.sa",
       "amount": "430.00",
       "active": true,
-      "decision": "",
+      "decision": "reject",
       "items": [
         {
           "name": "Bluetooth Speaker",
@@ -25,7 +25,7 @@
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
       "amount": "500.00",
-      "active": false,
+      "active": true,
       "decision": "accept",
       "items": [
         {

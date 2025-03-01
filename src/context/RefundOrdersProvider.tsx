@@ -1,7 +1,7 @@
 import React, { useReducer, ReactNode, useEffect } from "react";
 import { useQueryClient } from "@tanstack/react-query";
 import { RefundOrdersApi } from "../repository/RefundOrdersApi";
-import useGetComments from "../hooks/useGetRefundOrders";
+import useGetRefundOrders from "../hooks/useGetRefundOrders";
 import { RefundOrdersContext } from "./RefundOrdersContext";
 import { OrdersState } from "../types/order_record";
 import { OrdersAction } from "../types/order_action";
@@ -62,7 +62,7 @@ const ordersReducer = (state: OrdersState, action: OrdersAction): OrdersState =>
 export const RefundOrdersProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
     const queryClient = useQueryClient();
     const [state, dispatch] = useReducer(ordersReducer, getInitialState());
-    const { data, error, isFetching } = useGetComments(state);
+    const { data, error, isFetching } = useGetRefundOrders(state);
 
     const setPage = (page: number) => {
         if (page >= 1 && page <= state.pages) {
