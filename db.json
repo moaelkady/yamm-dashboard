@@ -8,7 +8,7 @@
       "store_url": "https://yamm.sa",
       "amount": "430.00",
       "active": true,
-      "decision": "accept",
+      "decision": "escalate",
       "items": [
         {
           "name": "Bluetooth Speaker",
@@ -26,7 +26,7 @@
       "store_url": "https://yamm.sa",
       "amount": "500.00",
       "active": true,
-      "decision": "reject",
+      "decision": "",
       "items": [
         {
           "name": "Bluetooth Speaker",
@@ -43,8 +43,8 @@
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
       "amount": "269.97",
-      "active": true,
-      "decision": "reject",
+      "active": false,
+      "decision": "escalate",
       "items": [
         {
           "name": "Mechanical Keyboard",
@@ -62,7 +62,7 @@
       "store_url": "https://yamm.sa",
       "amount": "341.00",
       "active": false,
-      "decision": null,
+      "decision": "accept",
       "items": [
         {
           "name": "Bluetooth Speaker",
@@ -2917,7 +2917,7 @@
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
       "amount": "210.00",
-      "active": false,
+      "active": true,
       "decision": "escalate",
       "items": [
         {
@@ -2941,7 +2941,7 @@
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
       "amount": "359.96",
-      "active": false,
+      "active": true,
       "decision": null,
       "items": [
         {
@@ -2959,7 +2959,7 @@
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
       "amount": "542.97",
-      "active": false,
+      "active": true,
       "decision": "",
       "items": [
         {
@@ -2977,7 +2977,7 @@
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
       "amount": "359.96",
-      "active": false,
+      "active": true,
       "decision": "",
       "items": [
         {
@@ -2995,7 +2995,7 @@
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
       "amount": "150.00",
-      "active": false,
+      "active": true,
       "decision": null,
       "items": [
         {
@@ -3013,7 +3013,7 @@
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
       "amount": "89.99",
-      "active": true,
+      "active": false,
       "decision": null,
       "items": [
         {
@@ -3031,7 +3031,7 @@
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
       "amount": "1254.96",
-      "active": true,
+      "active": false,
       "decision": null,
       "items": [
         {
@@ -3337,7 +3337,7 @@
       "store_logo": "/logo.svg",
       "store_url": "https://yamm.sa",
       "amount": "299.99",
-      "active": true,
+      "active": false,
       "decision": "accept",
       "items": [
         {

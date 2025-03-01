@@ -1,3 +1,5 @@
+import { OrdersAction } from "./order_action";
+
 export interface OrderItem {
     name: string;
     id: string;
@@ -32,8 +34,7 @@ export interface RefundOrdersTableProps {
     pages: number,
     goToNextPage: () => void;
     goToPrevPage: () => void;
-    toggleOrderStatus: (orderId: string, newBody: object) => Promise<void>;
-    updateOrderDecision: (orderId: string, newBody: object, decesion: OrderDecision) => Promise<void>;
+    updateOrderDecision: (orderId: string, newBody: OrderRecord, decesion: OrderDecision) => Promise<OrderRecord>;
 }
 
 export interface OrdersContextProps {
@@ -42,20 +43,18 @@ export interface OrdersContextProps {
     setPage: (page: number) => void;
     goToNextPage: () => void;
     goToPrevPage: () => void;
-    toggleOrderStatus: (orderId: string, newBody: object) => Promise<void>;
-    updateOrderDecision: (orderId: string, newBody: object, decision: OrderDecision) => Promise<void>;
+    updateOrderDecision: (orderId: string, newBody: OrderRecord, decision: OrderDecision) => Promise<OrderRecord>;
+    dispatch: React.Dispatch<OrdersAction>;
 }
 
 export interface OrdersTableProps {
     orders: OrderRecord[];
-    handleToggleOrderStatus: (orderId: string, order: OrderRecord) => void;
-    handleUpdateOrderDecision: (orderId: string, order: OrderRecord, decision: OrderDecision) => void;
+    handleUpdateOrderDecision: (orderId: string, order: OrderRecord, decision: OrderDecision) => OrderRecord;
 }
 
 export interface OrderRowProps {
     order: OrderRecord;
-    handleToggleOrderStatus: (orderId: string, order: OrderRecord) => void;
-    handleUpdateOrderDecision: (orderId: string, order: OrderRecord, decision: OrderDecision) => void;
+    handleUpdateOrderDecision: (orderId: string, order: OrderRecord, decision: OrderDecision) => OrderRecord;
 }
 
 export interface PaginationControlsProps {
@@ -63,4 +62,9 @@ export interface PaginationControlsProps {
     pages: number;
     goToNextPage: () => void;
     goToPrevPage: () => void;
+}
+
+export interface OrderStatusToggleProps {
+    orderId: string;
+    newBody: OrderRecord;
 }

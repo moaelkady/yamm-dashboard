@@ -30,8 +30,8 @@ export const RefundOrdersApi = {
         return response.data;
     },
 
-    updateOrderDecision: async (orderId: string, newBody: object): Promise<void> => {
-        const response = await NetworkCall.makeCall<void>({
+    updateOrderDecision: async (orderId: string, newBody: OrderRecord): Promise<OrderRecord> => {
+        const response = await NetworkCall.makeCall<OrderRecord>({
             endPoint: `${ServicesURLs.ORDERS}/${orderId}`,
             method: HttpMethod.PUT,
             requestBody: { ...newBody },
@@ -40,10 +40,12 @@ export const RefundOrdersApi = {
         if (!response.success) {
             throw new Error(response.error.message);
         }
+
+        return response.data;
     },
 
-    toggleOrderStatus: async (orderId: string, newBody: object): Promise<void> => {
-        const response = await NetworkCall.makeCall<void>({
+    toggleOrderStatus: async ({ orderId, newBody }: { orderId: string, newBody: OrderRecord }): Promise<OrderRecord> => {
+        const response = await NetworkCall.makeCall<OrderRecord>({
             endPoint: `${ServicesURLs.ORDERS}/${orderId}`,
             method: HttpMethod.PUT,
             requestBody: { ...newBody },
@@ -52,5 +54,7 @@ export const RefundOrdersApi = {
         if (!response.success) {
             throw new Error(response.error.message);
         }
+
+        return response.data;
     }
 };

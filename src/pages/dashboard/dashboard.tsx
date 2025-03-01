@@ -4,7 +4,7 @@ import RefundOrdersTable from "../../components/refund_orders_table";
 import ErrorMessage from '../../components/error_message';
 
 const Dashboard: React.FC = () => {
-    const { state, isFetching, goToNextPage, goToPrevPage, toggleOrderStatus, updateOrderDecision } = useRefundOrders();
+    const { state, isFetching, goToNextPage, goToPrevPage, updateOrderDecision } = useRefundOrders();
     return (
         <div>
             {isFetching ? "Loading" : state.error ? <ErrorMessage errMessage={state.error} /> : (
@@ -14,7 +14,6 @@ const Dashboard: React.FC = () => {
                     pages={state.pages}
                     goToNextPage={goToNextPage}
                     goToPrevPage={goToPrevPage}
-                    toggleOrderStatus={toggleOrderStatus}
                     updateOrderDecision={updateOrderDecision}
                 />
             )}

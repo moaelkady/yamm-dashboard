@@ -1,21 +1,14 @@
 import React, { useReducer, ReactNode, useEffect } from "react";
 import { toast } from "react-toastify";
-import { useQuery } from "@tanstack/react-query";
+import { useQueryClient } from "@tanstack/react-query";
+import useGetComments from "../hooks/useGetRefundOrders";
 import { RefundOrdersApi } from "../repository/RefundOrdersApi";
 import { OrderRecord, OrdersState } from "../types/order_record";
 import { OrdersActionTypes } from "../utils/enums";
-import { useQueryClient } from "@tanstack/react-query";
+import { OrdersAction } from "../types/order_action";
 import { RefundOrdersContext } from "./RefundOrdersContext";
 import "react-toastify/dist/ReactToastify.css";
 
-type OrdersAction =
-    | { type: OrdersActionTypes.FETCH_SUCCESS; payload: { data: OrderRecord[]; pages: number, page: number } }
-    | { type: OrdersActionTypes.TOGGLE_ORDER_STATUS; payload: { orderId: string; newBody: object } }
-    | { type: OrdersActionTypes.UPDATE_ORDER_DECISION; payload: { orderId: string; newBody: object; decision: "reject" | "accept" | "escalate" | null } }
-    | { type: OrdersActionTypes.FETCH_FAILURE; payload: string }
-    | { type: OrdersActionTypes.SET_PAGE; payload: number }
-    | { type: OrdersActionTypes.NEXT_PAGE }
-    | { type: OrdersActionTypes.PREV_PAGE };
 
 
 const storedPage = localStorage.getItem("pageNumber");
@@ -70,29 +63,12 @@ const ordersReducer = (state: OrdersState, action: OrdersAction): OrdersState =>
 };
 
 export const RefundOrdersProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
+    const queryClient = useQueryClient();
     const [state, dispatch] = useReducer(ordersReducer, getInitialState());
-
-    const { data, error, isFetching } = useQuery<{ data: OrderRecord[], pages: number, page: number }, Error>({
-        queryKey: ["refundOrders", state.page],
-        queryFn: () => RefundOrdersApi.fetchOrders(state.page, 15),
-        staleTime: 1000 * 60 * 5,
-    });
+    const { data, error, isFetching } = useGetComments(state);
 
 
-    useEffect(() => {
-        if (data) {
-            dispatch({
-                type: OrdersActionTypes.FETCH_SUCCESS,
-                payload: { data: data.data, pages: data.pages, page: data.page },
-            });
-        }
-    }, [data]);
 
-    useEffect(() => {
-        if (error) {
-            dispatch({ type: OrdersActionTypes.FETCH_FAILURE, payload: error.message });
-        }
-    }, [error]);
 
     const setPage = (page: number) => {
         if (page >= 1 && page <= state.pages) {
@@ -108,39 +84,45 @@ export const RefundOrdersProvider: React.FC<{ children: ReactNode }> = ({ childr
         dispatch({ type: OrdersActionTypes.PREV_PAGE });
     };
 
-    const toggleOrderStatus = async (orderId: string, newBody: object) => {
+    const updateOrderDecision = async (orderId: string, newBody: OrderRecord, decision: "reject" | "accept" | "escalate" | null) => {
         try {
-            await RefundOrdersApi.toggleOrderStatus(orderId, newBody);
-            dispatch({
-                type: OrdersActionTypes.TOGGLE_ORDER_STATUS,
-                payload: { orderId, newBody },
-            });
-            toast.success("Order status updated successfully!");
-        } catch (error) {
-            console.error("Failed to toggle order status", error);
-            toast.error("Failed to update order status.");
-        }
-    };
-
-    const updateOrderDecision = async (orderId: string, newBody: object, decision: "reject" | "accept" | "escalate" | null) => {
-        try {
-            await RefundOrdersApi.updateOrderDecision(orderId, newBody);
+            const updatedOrder = await RefundOrdersApi.updateOrderDecision(orderId, newBody);
             dispatch({
                 type: OrdersActionTypes.UPDATE_ORDER_DECISION,
                 payload: { orderId, newBody, decision },
             });
             toast.success(`Order decision changed to ${decision === null ? "Pending" : decision.length > 0 ? decision : "Pending"}`);
+            return updatedOrder;
         } catch (error) {
             console.error("Failed to update order decision", error);
             toast.error("Failed to update decision.");
+            throw new Error("Failed to update order decision");
         }
     };
 
+    // Update state when data is fetched
+    useEffect(() => {
+        if (data) {
+            dispatch({
+                type: OrdersActionTypes.FETCH_SUCCESS,
+                payload: { data: data.data, pages: data.pages, page: data.page },
+            });
+        }
+    }, [data]);
 
+    // Update state when error occurs
+    useEffect(() => {
+        if (error) {
+            dispatch({ type: OrdersActionTypes.FETCH_FAILURE, payload: error.message });
+        }
+    }, [error]);
+
+    // Save page to local storage
     useEffect(() => {
         localStorage.setItem("pageNumber", JSON.stringify(state.page))
     }, [state.page])
 
+    // Set page from local storage
     useEffect(() => {
         const storedPage = localStorage.getItem("pageNumber");
         if (storedPage) {
@@ -151,20 +133,33 @@ export const RefundOrdersProvider: React.FC<{ children: ReactNode }> = ({ childr
         }
     }, []);
 
-
-    const queryClient = useQueryClient();
+    // Prefetch next and previous pages
     useEffect(() => {
         const nextPage = state.page + 1;
-        if (nextPage > state.pages) return;
-        queryClient.prefetchQuery({
-            queryKey: ["refundOrders", nextPage],
-            queryFn: () => RefundOrdersApi.fetchOrders(nextPage, 15),
-            staleTime: 1000 * 60 * 5,
-        });
+        const prevPage = state.page - 1;
+
+        // Prefetch next page if within limits
+        if (nextPage <= state.pages) {
+            queryClient.prefetchQuery({
+                queryKey: ["refundOrders", nextPage],
+                queryFn: () => RefundOrdersApi.fetchOrders(nextPage, 15),
+                staleTime: 1000 * 60 * 5,
+            });
+        }
+
+        // Prefetch previous page if within limits
+        if (prevPage >= 1) {
+            queryClient.prefetchQuery({
+                queryKey: ["refundOrders", prevPage],
+                queryFn: () => RefundOrdersApi.fetchOrders(prevPage, 15),
+                staleTime: 1000 * 60 * 5,
+            });
+        }
     }, [state.page, state.pages, queryClient]);
 
+
     return (
-        <RefundOrdersContext.Provider value={{ state, isFetching, setPage, goToNextPage, goToPrevPage, toggleOrderStatus, updateOrderDecision }}>
+        <RefundOrdersContext.Provider value={{ state, isFetching, setPage, goToNextPage, goToPrevPage, updateOrderDecision, dispatch }}>
             {children}
         </RefundOrdersContext.Provider>
     );
